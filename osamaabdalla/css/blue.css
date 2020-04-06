@@ -1,0 +1,70 @@
+.body-overlay {
+  background: #37c6f5;
+}
+.hr span {
+  background: #37c6f5;
+}
+.sidebar .profile .user-img:before {
+  content: "";
+  border: 7px solid #37c6f5;
+}
+.link-post {
+  background: #37c6f5;
+}
+.sidebar .navigation ul li:before {
+  content: '';
+  background: #37c6f5;
+}
+.portolio-menu ul li a.active, .portolio-menu ul li a:hover {
+  background: #37c6f5;
+  color: #343434;
+  border-color: #37c6f5;
+}
+.portfolio .item:hover .item-img {
+  background: rgba(55, 198, 245, 0.85);
+}
+.contact-form .button {
+  background: #37c6f5;
+}
+.quote-post blockquote {
+  color: #37c6f5;
+}
+.services .progress-bar {
+  background-color: #37c6f5;
+}
+
+.service li .service-inner {
+  background: #37c6f5;
+}
+
+.footer .copy a:hover {
+  color: #37c6f5;
+}
+
+.carousel-indicators .active {
+  border-color: #37c6f5;
+}
+
+.social ul li a:hover {
+  color: #37c6f5;
+}
+
+.double-bounce1, .double-bounce2 {
+  background-color: #37c6f5;
+}
+
+.comment-img .outline {
+  border: 3px solid #37c6f5;
+}
+
+.reply {
+  background: #37c6f5;
+}
+
+.reply:hover {
+  color: #37c6f5;
+}
+
+.post .post-body a:hover {
+  color: #37c6f5;
+}

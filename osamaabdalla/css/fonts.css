@@ -1,0 +1,15 @@
+/* Icons Font */
+@import url("fontawesome.css");
+/* Droid Arabic Naskh */
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+/* JF Flat */
+@font-face {
+  font-family: "JF Flat";
+  src: url('../fonts/JFFlat/JF-Flat-regular.eot');
+  src: url('../fonts/JFFlat/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/JFFlat/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+  url('../fonts/JFFlat/JF-Flat-regular.woff') format('woff'),
+  url('../fonts/JFFlat/JF-Flat-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
