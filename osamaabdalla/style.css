@@ -173,6 +173,7 @@ body {
   background: url("img/Osama-Abdalla-Mohamed-Abdelrahman.jpg") no-repeat;
   background-size: cover;
   height: 257px;
+  opacity:0.9;
 }
 
 .sidebar .profile .user-img {
