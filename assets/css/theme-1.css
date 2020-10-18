@@ -12676,3 +12676,18 @@ img.projectslides{
     border-radius: 0;
     max-width: 72px;
 }
+.card-rate .rate{
+    float: left;
+    margin-top: 5px;
+}
+.card-rate{
+    color: #4CAF50;
+    float: left;
+    width: 97%;
+}
+.card-rate svg{
+    float: left;
+}
+.card-rate .experience{
+    float: right;
+}
