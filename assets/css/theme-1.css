@@ -12664,3 +12664,15 @@ img.projectslides{
 #tns1 > .tns-item{
     padding-right: 0 !important;
 }
+.techused .card-body{
+    height: 100%;
+}
+.techused .card-body .card-title{
+    height: 100%;
+    margin: 0;
+    line-height: 200%;
+}
+.techused .project-card .card-img {
+    border-radius: 0;
+    max-width: 72px;
+}
