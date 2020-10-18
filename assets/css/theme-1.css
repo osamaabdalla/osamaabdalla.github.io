@@ -11451,6 +11451,11 @@ hr {
 .testimonial-carousel .item-inner {
     padding: 1.5rem;
     padding-left: 3rem;
+    padding-bottom: 0rem;
+    padding: 0;
+}
+
+.testimonial-carousel .item-inner {
     border: 1px solid rgba(0, 0, 0, 0.025);
     background: #fafafa;
     height: 100%;
@@ -12644,4 +12649,18 @@ div.item-large-icon-cont {
 }
 .hide-this{
     display: none !important;
+}
+.item-inner i{
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    z-index: 99999;
+    color: white;
+    font-style: normal;
+}
+img.projectslides{
+    max-width: calc(100%);
+}
+#tns1 > .tns-item{
+    padding-right: 0 !important;
 }
