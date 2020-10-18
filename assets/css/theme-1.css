@@ -10952,16 +10952,12 @@ h6 {
 }
 
 a.theme-link {
-    color: #292929;
-    text-decoration: underline;
-    -webkit-text-decoration-color: rgba(41, 41, 41, 0.3);
-    text-decoration-color: rgba(41, 41, 41, 0.3)
+    color: #23a267;
+    text-decoration: none;
 }
 
 a.theme-link:hover {
-    color: #34495e;
-    -webkit-text-decoration-color: rgba(84, 182, 137, 0.8);
-    text-decoration-color: rgba(84, 182, 137, 0.8)
+    color: #23a267;
 }
 
 .single-col-max-width {
@@ -11530,18 +11526,21 @@ hr {
     background: #fafafa;
     border: 1px solid rgba(0, 0, 0, 0.025);
     position: relative;
-    height: 100%
+    height: 100%;
 }
-
-.project-card:hover .link-mask {
-    visibility: visible;
-    background: rgba(41, 41, 41, 0.4)
+a.more-link {
+    font-size: 13px;
 }
-
-.project-card:hover .link-mask-text {
-    display: block
+/*
+@media (max-width: 1300px) {
+    .featuredprojects .project-card, .publications .project-card{
+        padding-bottom: 50px;
+    }
 }
-
+.featuredprojects .project-card .card-text, .publications .project-card .card-text{
+    margin-bottom: 8px !important;
+}
+*/
 .project-card .card-img {
     border-radius: 0
 }
@@ -11563,45 +11562,30 @@ hr {
 
 .project-card .link-mask {
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
-    visibility: hidden;
-    transition: all 0.4s ease-in-out
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .project-card .link-mask {
-        transition: none
-    }
+    height: 50px;
+    display: block;
+    padding: 0 15px;
+    bottom: 0;
 }
 
 .project-card .link-mask .link-mask-link {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: block
+    display: none;
 }
 
 .project-card .link-mask-text {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    vertical-align: middle;
     color: #fff;
-    display: none
+    display: block;
 }
 
 .project-card .link-mask-text .btn {
-    top: 50%;
-    margin-top: -20px;
-    position: relative
+    top: 0;
+    margin-top: 0;
+    position: relative;
 }
 
 .blog-post-card {
@@ -11696,7 +11680,8 @@ hr {
 
 .metric-data {
     font-weight: bold;
-    font-size: 2rem
+    font-size: 2rem;
+    color: #3ce094;
 }
 
 .metric-data .unit {
@@ -12207,10 +12192,6 @@ a.resume-link:hover {
         padding-left: 1.875rem
     }
 
-    .link-mask {
-        display: none !important
-    }
-
     .mobile-is-hidden {
         display: none
     }
@@ -12384,10 +12365,6 @@ body.dark-mode .testimonial-carousel .item-inner {
 body.dark-mode .project-card {
     background: #151e29;
     border: none
-}
-
-body.dark-mode .project-card:hover .link-mask {
-    background: rgba(0, 0, 0, 0.5)
 }
 
 body.dark-mode .blog-post-card {
