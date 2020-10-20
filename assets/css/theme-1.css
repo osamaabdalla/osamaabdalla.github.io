@@ -11171,7 +11171,7 @@ hr {
 
 .profile-section .profile-image {
     max-width: 160px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .profile-section .bio {
