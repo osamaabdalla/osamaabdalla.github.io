@@ -11535,6 +11535,8 @@ hr {
 }
 a.more-link {
     font-size: 13px;
+    color: #F44336;
+    font-weight: bold;
 }
 /*
 @media (max-width: 1300px) {
@@ -12690,4 +12692,28 @@ img.projectslides{
 }
 .card-rate .experience{
     float: right;
+}
+.techfeatures>div{}
+.techfeatures>div>div{}
+.techfeatures>div div.col-11{
+    width: 100%;
+    padding-left: 45px;
+}
+.techfeatures>div div.col-1{
+    text-align: center;
+    line-height: 200%;
+    font-size: 35px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -5px;
+    top: -12px;
+    color: #f0c940;
+}
+.techfeatures>div>div>div .card-body{
+    padding: 12px 1px;
+}
+.techfeatures>div .card-title{
+    margin: 0;
+    font-size: 17px;
+    font-weight: normal;
 }
