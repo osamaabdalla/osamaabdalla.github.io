@@ -12739,3 +12739,8 @@ a[href="https://stackoverflow.com/story/osamaabdalla"] svg{
 .social-list.conts a{
     border: 1px solid #e8e8e8;
 }
+@media (max-width: 550px) {
+    .techfeatures>div div.col-1{
+        left: 2px;
+    }
+}
