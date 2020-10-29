@@ -12743,4 +12743,10 @@ a[href="https://stackoverflow.com/story/osamaabdalla"] svg{
     .techfeatures>div div.col-1{
         left: 2px;
     }
+    .profile-resume-links a{
+        width: 48%;
+    }
+    .profile-resume-links{
+        margin-bottom: 25px !important;
+    }
 }
