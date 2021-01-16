@@ -6,7 +6,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>http://osamaabdalla.com/</loc>
   <lastmod>2020-10-28T13:03:39+00:00</lastmod>
@@ -29,11 +28,6 @@
 </url>
 <url>
   <loc>http://osamaabdalla.com/contact.html</loc>
-  <lastmod>2020-10-28T13:03:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://osamaabdalla.com/blog-home.html</loc>
   <lastmod>2020-10-28T13:03:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -72,16 +66,4 @@
   <lastmod>2020-10-28T13:03:39+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-<url>
-  <loc>http://osamaabdalla.com/services.html</loc>
-  <lastmod>2020-10-28T13:03:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://osamaabdalla.com/blog-post.html</loc>
-  <lastmod>2020-10-28T13:03:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
