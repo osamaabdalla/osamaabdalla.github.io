@@ -1,0 +1,1030 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Osama - App calculator | أسامة - حاسبة التكلفة</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osama - App calculator | أسامة - حاسبة التكلفة">
+    <meta name="description" content="FullStack Developer & Data Scientist - One time Mobile App calculator">
+    <meta property="og:title" content="Osama - App calculator | أسامة - حاسبة التكلفة" />
+    <meta property="og:description" content="FullStack Developer & Data Scientist - One time Mobile App calculator" />
+    <meta property="og:url" content="http://osamaabdalla.com" />
+    <meta property="og:image" content="http://osamaabdalla.com/assets/images/OAbdelrahman.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="transparent">
+    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="transparent">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4KDLGR9Z4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-P4KDLGR9Z4');
+    </script>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="MobileAppCostCalculator/font-awesome.css">
+    <link rel="stylesheet" href="MobileAppCostCalculator/simple-line-icons.css">
+    <link rel="stylesheet" href="MobileAppCostCalculator/bootstrap.css">
+    <link rel="stylesheet" href="MobileAppCostCalculator/style.css">
+    <link rel="stylesheet" href="MobileAppCostCalculator/component.css">
+    <script async="" src="MobileAppCostCalculator/analytics.js"></script>
+    <script type="text/javascript" src="MobileAppCostCalculator/jquery.min.js"></script>
+    <script src="MobileAppCostCalculator/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="MobileAppCostCalculator/jquery-ui-touch.min.js"></script>
+    <script type="text/javascript" src="MobileAppCostCalculator/bootstrap.min.js"></script>
+    <script type="text/javascript" src="MobileAppCostCalculator/core.min.js"></script>
+    <style type="text/css">
+        input.parsley-success,
+        select.parsley-success,
+        textarea.parsley-success {
+            color: #468847;
+            background-color: #DFF0D8;
+            border: 1px solid #D6E9C6;
+        }
+
+        input.parsley-error,
+        select.parsley-error,
+        textarea.parsley-error {
+            color: #B94A48;
+            background-color: #F2DEDE;
+            border: 1px solid #EED3D7;
+        }
+
+        .parsley-errors-list {
+            margin: 2px 0 3px;
+            padding: 0;
+            list-style-type: none;
+            font-size: 0.9em;
+            line-height: 0.9em;
+            opacity: 0;
+            transition: all .3s ease-in;
+            -o-transition: all .3s ease-in;
+            -moz-transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+        }
+
+        .parsley-errors-list.filled {
+            opacity: 1;
+        }
+
+        @media (max-width: 992px) {
+            body {
+                overflow: scroll;
+            }
+        }
+    </style>
+    <div class="vp-calculator scrollbody" data-gr-c-s-loaded="true" style="zoom: 1;min-height: 100%;">
+
+        <div id="result" class="modal fade in" role="dialog">
+            <div class="modal-dialog modal-md">
+                <!-- Modal content-->
+                <div class="modal-content modal-bg">
+                    <div class="modal-body col-md-12 pt15 pb15 text-center fs22">
+                        <span id="result-message">لا يمكن أن يكون التطبيق بدون أي ميزات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-main map-bg2 text-center">
+            <section class="page1">
+                <div class="cal-valign frame-5"><br><br><br><br>
+                    <span class="featured-text anim-text"
+                        style="margin: 90px auto;margin-bottom: 30px;font-size: 20px;line-height: 35px;max-width: 350px;width: auto;"><br><br>
+                        هل لديك فكرة تطبيق وتريد تحويلها الى مشروع ريادي ؟ <br />
+                    </span>
+                    <span class="subtext mb30 anim-text"><br></span>
+                    <p class="text-center anim-btn">
+                        <button class="btn btn-red sliding-next get-started" data-slide="0">إبدإ الآن<i
+                                class="fa fa-spinner fa-spin"></i></button>
+                    </p>
+                    <div class="side-dots hide">
+                        <div class="col-xs-12 text-right">
+
+                            <span data-page="page2" class="slide-title">
+                                <span class="slide-point">المنصات المطلوبة</span>
+                                <span class="pagination-circle-new">
+                                    <span class="pc-inside-light-new slide-dot2" data-slide="2"></span>
+                                </span>
+                            </span>
+
+                            <span data-page="page0" class="slide-title">
+                                <span class="slide-point">نوع البرمجة</span>
+                                <span class="pagination-circle-new">
+                                    <span class="pc-inside-light-new slide-dot0" data-slide="0"></span>
+                                </span>
+                            </span>
+
+                            <span data-page="page3" class="slide-title">
+                                <span class="slide-point">التصميم</span>
+                                <span class="pagination-circle-new">
+                                    <span class="pc-inside-light-new slide-dot3" data-slide="3"></span>
+                                </span>
+                            </span>
+
+                            <span data-page="page4" class="slide-title">
+                                <span class="slide-point">الحماية</span>
+                                <span class="pagination-circle-new">
+                                    <span class="pc-inside-light-new slide-dot4" data-slide="4"></span>
+                                </span>
+                            </span>
+
+                            <span data-page="page5" class="slide-title">
+                                <span class="slide-point">الخدمات</span>
+                                <span class="pagination-circle-new">
+                                    <span class="pc-inside-light-new slide-dot5" data-slide="5"></span>
+                                </span>
+                            </span>
+
+                            <span data-page="page6" class="slide-title">
+                                <span class="slide-point">المميزات</span>
+                                <span class="pagination-circle-new">
+                                    <span class="pc-inside-light-new slide-dot6" data-slide="6"></span>
+                                </span>
+                            </span>
+
+                            <span data-page="page7" class="slide-title">
+                                <span class="slide-point">تم</span>
+                                <span class="pagination-circle-new">
+                                    <span class="pc-inside-light-new slide-dot7" data-slide="7"></span>
+                                </span>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="visibility:hidden;display:none">
+                    <div class="vp-ic fa fa-android">&nbsp;</div>
+                    <div class="vp-ic icon-globe">&nbsp;</div>
+                </div>
+            </section>
+            <form class="form-horizontal form-bordered" data-parsley-validate="data-parsley-validate"
+                id="wizard-validate" action="" method="post" novalidate="">
+                <input type="hidden" name="total_price" value="7200" id="total_price">
+                <input type="hidden" name="total_hour" value="180" id="total_hour">
+                <input type="hidden" name="zoneqprice1" value="130" id="zoneqprice1">
+                <input type="hidden" name="zoneqprice2" value="65" id="zoneqprice2">
+                <input type="hidden" name="zoneqprice3" value="45" id="zoneqprice3">
+                <section id="page0" class="page0 pages  hide ">
+                    <div class="container">
+                        <h3 id="header2" class="featured-text header"> المنصات المطلوبة </h3>
+                        <div class="row">
+                            <div class="block text-right">
+                                <h1 class="nm block-head-text" id="9">اختر نوع التطبيق المطلوب</h1>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header2" id="chkbx_512" value="متجر"
+                                            name="checkbox[4]" data-hour="35" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_512">
+                                            <div class="icon-box">
+                                                <div class="vp-ic vp-ic fa fa-shopping-cart">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader51"> متجر
+                                                <br><span>تطبيق به منتجات وعمليات شراء</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox9"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header2" id="chkbx_522" value="تطبيق خدمات"
+                                            name="checkbox[4]" data-hour="25" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_522">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-taxi">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader52">تطبيق خدمات
+                                                <br><span>تطبيق خدمات وفواتير ومزودي خدمة</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="radio" class="header2" id="chkbx_532" value="تطبيق تعريفي"
+                                            name="checkbox[4]" data-hour="15" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_532">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-television">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader53">تطبيق تعريفي
+                                                <br><span>تطبيق تعريفي لشركة او مؤسسة او افراد</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="radio" class="header2" id="chkbx_542" value="لم احدد"
+                                            name="checkbox[4]" data-hour="0" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_542">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-cog">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader54">لم احدد
+                                                <br><span>للتحديد لاحقا</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <h1 class="nm block-head-text" id="9"> إختر المنصات المطلوب بناء التطبيق عليها </h1>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="checkbox" class="header2" id="chkbx_51" value="اندرويد"
+                                            name="checkbox[3][]" data-hour="25" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_51">
+                                            <div class="icon-box">
+                                                <div class="vp-ic vp-ic fa fa-android">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader51"> اندرويد
+                                                <br><span>نسخة لمتجر قوقل بلاي استور</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox9"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="checkbox" class="header2" id="chkbx_52" value="آيفون"
+                                            name="checkbox[3][]" data-hour="50" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_52">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-apple">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader52">آيفون
+                                                <br><span>نسخة لمتجر آبل لأجهزة الآيفون</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="checkbox" class="header2" id="chkbx_53" value="ويندوز"
+                                            name="checkbox[3][]" data-hour="22" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_53">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-windows">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader53">ويندوز
+                                                <br><span>نسخة لمتجر ويندوز فون</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="checkbox" class="header2" id="chkbx_54" value="متصفح"
+                                            name="checkbox[3][]" data-hour="12" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_54">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-globe">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader54">متصفح
+                                                <br><span>نسخة موقع تعريفية للتطبيق</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="checkbox" class="header2" id="chkbx_154" value="منصة ويب"
+                                            name="checkbox[3][]" data-hour="25" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_154">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-globe">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader54">منصة ويب
+                                                <br><span>موقع متكامل لتقديم جميع خدمات التطبيق</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-green sliding-next mb100" data-slide="2">إستمرار <i
+                                class="fa fa-spinner fa-spin"></i></button>
+                    </div>
+                </section>
+                <section id="page2" class="page2 pages  hide ">
+                    <div class="container">
+                        <h3 id="header2" class="featured-text header"> إختر نوع البرمجة المطلوبة </h3>
+                        <div class="row">
+                            <div class="block text-right">
+                                <h1 class="nm block-head-text" id="9"> إختر نوع لغة البرمجة المطلوب عملها </h1>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header2" id="chkbx_64" value="برمجة نيتف"
+                                            name="checkbox[1]" data-hour="110" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_64">
+                                            <div class="icon-box">
+                                                <div class="vp-ic vp-ic fa fa-code">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader51"> برمجة نيتف
+                                                <br><span>برمجة بواسطة اللغة الاصلية لنظام التشغيل</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox9"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header2" id="chkbx_65" value="هيبريد"
+                                            name="checkbox[1]" data-hour="50" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_65">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-code">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader52">برمجة هيبريد
+                                                <br><span> تناسب التطبيقات الصغيرة والمتوسطة</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <h1 class="nm block-head-text" id="9">هل تحتاج نموذج عمل تجاري ؟</h1>
+                                <h4 class="subtext">واحد من اهم الخطوات التى تساعدك في بدء مشروعك بأقل وقت وجهد ومخاطرة
+                                    والمستخدمه من اكثر من مليون مؤوسسة حول العالم من خلال شريكنا المتخصص فى ريادة
+                                    الاعمال ونموذج العمل التجاري نحو الريادة.
+                                </h4>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header2" id="chkbx_66" value="نعم" name="checkbox[2]"
+                                            data-hour="10" data-parsley-multiple="checkbox9" data-parsley-id="3989">
+                                        <label for="chkbx_66">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-briefcase">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader51"> نعم </div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox9"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header2" id="chkbx_67" value="لا احتاج"
+                                            name="checkbox[2]" data-hour="0" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_67">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-briefcase">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader52">لا احتاج</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt">
+                                        <input type="radio" class="header2" id="chkbx_68" value="فيما بعد"
+                                            name="checkbox[2]" data-hour="0" data-parsley-multiple="checkbox9"
+                                            data-parsley-id="3989">
+                                        <label for="chkbx_68">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-briefcase">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader52">فيما بعد</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-green sliding-next mb100" data-slide="3">إستمرار <i
+                                class="fa fa-spinner fa-spin"></i></button>
+                    </div>
+                </section>
+                <section id="page3" class="page3 pages  hide ">
+                    <div class="container">
+                        <h3 id="header3" class="featured-text header"> التصميم </h3>
+                        <div class="row">
+                            <div class="block text-right">
+                                <h1 class="nm block-head-text" id="10">إختر نوع الواجهات المطلوبة للتطبيق </h1>
+                                <h4 class="subtext">
+                                    تأكد تماما من جودة التصميم النهائي لدينا ايا كان نوع اختيارك
+                                </h4>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header3" id="chkbx_27" value=" تصميم احترافي"
+                                            name="checkbox[5]" data-hour="25" data-parsley-multiple="checkbox10"
+                                            data-parsley-id="9706">
+                                        <label for="chkbx_27">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-columns">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader27"> تصميم احترافي
+                                                <br><span>سيتم عمل تصميم احترافي للتطبيق</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox10"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header3" id="chkbx_28" value="تصميم عادي"
+                                            name="checkbox[5]" data-hour="10" data-parsley-multiple="checkbox10"
+                                            data-parsley-id="9706">
+                                        <label for="chkbx_28">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-settings">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader28">تصميم عادي
+                                                <br><span>سيتم عمل تصميم يناسب احتياجات تطبيقك</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <h1 class="nm block-head-text" id="21">كم عدد الصفحات المتوقعة للتطبيق تقريبا </h1>
+                                <div class="col-xs-12 np mb70 admin-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header3" id="chkbx_55" value="1 - 6"
+                                            name="checkbox[6]" data-hour="12" data-parsley-multiple="checkbox21"
+                                            data-parsley-id="7767">
+                                        <label for="chkbx_55">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text gesss" id="optionheader55">1 - 6
+                                                <br><span>تشمل شاشات تسجيل الدخول والعضوية</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox21"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header3" id="chkbx_56" value="7 - 12"
+                                            name="checkbox[6]" data-hour="17" data-parsley-multiple="checkbox21"
+                                            data-parsley-id="7767">
+                                        <label for="chkbx_56">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text gesss" id="optionheader56">7 - 12
+                                                <br><span>تشمل شاشات تسجيل الدخول والعضوية</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="radio" class="header3" id="chkbx_57" value="13 - 20"
+                                            name="checkbox[6]" data-hour="25" data-parsley-multiple="checkbox21"
+                                            data-parsley-id="7767">
+                                        <label for="chkbx_57">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text gesss" id="optionheader57">13 - 20
+                                                <br><span>تشمل شاشات تسجيل الدخول والعضوية</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="radio" class="header3" id="chkbx_62" value="21+" name="checkbox[6]"
+                                            data-hour="35" data-parsley-multiple="checkbox21" data-parsley-id="7767">
+                                        <label for="chkbx_62">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text gesss" id="optionheader62">21+
+                                                <br><span>اختر واشرف علي الشاشات التي تناسبك</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-green sliding-next mb100" data-slide="4">إستمرار <i
+                                class="fa fa-spinner fa-spin"></i></button>
+                    </div>
+                </section>
+                <section id="page4" class="page4 pages  hide ">
+                    <div class="container">
+                        <h3 id="header4" class="featured-text header"> الحماية </h3>
+                        <div class="row">
+                            <div class="block text-right">
+                                <h4 class="subtext" style=" text-align: center; margin-bottom: 40px; font-size: 16px;">
+                                    كل كود يتم كتابته بعناية تامة لكي لايتم استخدامه في اختراع تطبيقك
+                                </h4>
+                                <h1 class="nm block-head-text" id="11"> كيف سيقوم المستخدمين بتسجيل الدخول ؟</h1>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header4" id="chkbx_10"
+                                            value="بريد إلكتروني وكلمة مرور" name="checkbox[7]" data-hour="8"
+                                            data-parsley-multiple="checkbox11" data-parsley-id="5865">
+                                        <label for="chkbx_10">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-envelope">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader10">بريد إلكتروني وكلمة مرور
+                                                <br><span>اسم مستخدم + كلمة مرور</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox11"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header4" id="chkbx_11"
+                                            value="بواسطة وسائل التواصل الإجتماعي" name="checkbox[7]" data-hour="8"
+                                            data-parsley-multiple="checkbox11" data-parsley-id="5865">
+                                        <label for="chkbx_11">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-globe">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader11">بواسطة وسائل التواصل الإجتماعي
+                                                <br><span>فيس بوك + تويتر + انستغرام + قوقل</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="radio" class="header4" id="chkbx_12"
+                                            value=" كلمة المرور ووسائل التواصل" name="checkbox[7]" data-hour="16"
+                                            data-parsley-multiple="checkbox11" data-parsley-id="5865">
+                                        <label for="chkbx_12">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-shuffle">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader12"> كلمة المرور ووسائل التواصل
+                                                <br><span>جميع الطرق المتوفرة </span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="radio" class="header4" id="chkbx_63" value="طرق مختلفة"
+                                            name="checkbox[7]" data-hour="15" data-parsley-multiple="checkbox11"
+                                            data-parsley-id="5865">
+                                        <label for="chkbx_63">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-login">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader63"> طرق مختلفة
+                                                <br><span>اختيارات تناسب احتياجات تطبيقك</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <h1 class="nm block-head-text" id="17">إختر مستوى الحماية المطلوبة للتطبيق </h1>
+                                <div class="col-xs-12 np mb70 admin-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header4" id="chkbx_33" value="بدون حماية"
+                                            name="checkbox[8]" data-hour="0" data-parsley-multiple="checkbox17"
+                                            data-parsley-id="7164">
+                                        <label for="chkbx_33">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader33">بدون حماية
+                                                <br><span>تشمل الحماية الاساسية للتطبيقات</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox17"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="radio" class="header4" id="chkbx_34" value="حماية متوسطة"
+                                            name="checkbox[8]" data-hour="15" data-parsley-multiple="checkbox17"
+                                            data-parsley-id="7164">
+                                        <label for="chkbx_34">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader34">حماية متوسطة
+                                                <br><span>الحماية الاساسية + شهادة ssl</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="radio" class="header4" id="chkbx_35" value="حماية متقدمة"
+                                            name="checkbox[8]" data-hour="25" data-parsley-multiple="checkbox17"
+                                            data-parsley-id="7164">
+                                        <label for="chkbx_35">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader35">حماية متقدمة
+                                                <br><span>تشفير خاص لاكواد التطبيق</span></span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="radio" class="header4" id="chkbx_36" value="حماية كاملة للتطبيق"
+                                            name="checkbox[8]" data-hour="35" data-parsley-multiple="checkbox17"
+                                            data-parsley-id="7164">
+                                        <label for="chkbx_36">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader36">حماية كاملة للتطبيق
+                                                <br><span>حماية باحدث الطرق المتوفرة</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-green sliding-next mb100" data-slide="5">إستمرار <i
+                                class="fa fa-spinner fa-spin"></i></button>
+                    </div>
+                </section>
+                <section id="page5" class="page5 pages  hide ">
+                    <div class="container">
+                        <h3 id="header5" class="featured-text header"> الخدمات وقواعد البيانات </h3>
+                        <div class="row">
+                            <div class="block text-right">
+                                <h1 class="nm block-head-text" id="13">ما هي الخدمات التي تريد إضافتها للتطبيق ؟</h1>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="checkbox" class="header5" id="chkbx_13"
+                                            value="وسائل التواصل الإجتماعي" name="checkbox[9][]" data-hour="15"
+                                            data-parsley-multiple="checkbox13" data-parsley-id="2612">
+                                        <label for="chkbx_13">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-user-following">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader13">وسائل التواصل الإجتماعي
+                                                <br><span>فيس بوك - تويتر - انستغرام</span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox13"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="checkbox" class="header5" id="chkbx_14" value="خرائط قوقل"
+                                            name="checkbox[9][]" data-hour="12" data-parsley-multiple="checkbox13"
+                                            data-parsley-id="2612">
+                                        <label for="chkbx_14">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-pointer">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader14">خرائط قوقل
+                                                <br><span>موقعك ، موقع خدماتك ، موقع عملاؤك</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="checkbox" class="header5" id="chkbx_15"
+                                            value="وسائط (فيديوهات وصور)" name="checkbox[9][]" data-hour="12"
+                                            data-parsley-multiple="checkbox13" data-parsley-id="2612">
+                                        <label for="chkbx_15">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-film">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader15">وسائط (فيديوهات وصور)
+                                                <br><span>معرض صور ، فيديوهات يوتيوب ، الخ </span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="checkbox" class="header5" id="chkbx_16" value="وسائل دفع إلكتروني"
+                                            name="checkbox[9][]" data-hour="25" data-parsley-multiple="checkbox13"
+                                            data-parsley-id="2612">
+                                        <label for="chkbx_16">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-basket">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader16">وسائل دفع إلكتروني
+                                                <br><span>بطاقات إئتمانية ، باي بال ، تحويل بنكي </span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-green sliding-next mb100" data-slide="6">إستمرار <i
+                                class="fa fa-spinner fa-spin"></i></button>
+                    </div>
+                </section>
+                <section id="page6" class="page6 pages  hide ">
+                    <div class="container">
+                        <h3 id="header6" class="featured-text header"> مميزات التطبيق ولوحة التحكم</h3>
+                        <div class="row">
+                            <div class="block text-right">
+                                <h4 class="subtext" style=" text-align: center; margin-bottom: 40px; font-size: 16px;">
+                                    اختر مميزات تطبيقك بعناية حتى تضمن عرض سعر مناسب لما تريده
+                                </h4>
+                                <h1 class="nm block-head-text" id="19"> اختر مميزات لوحة التحكم الخاصة بالتطبيق </h1>
+                                <div class="col-xs-12 np mb70 ui-theme-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="checkbox" class="header6" id="chkbx_40"
+                                            value="إدارة المستخدمين والصلاحيات " name="checkbox[11][]" data-hour="12"
+                                            data-parsley-multiple="checkbox19" data-parsley-id="4906">
+                                        <label for="chkbx_40">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-user-following">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader40">إدارة المستخدمين والصلاحيات
+                                                <br><span>الاعضاء ، المدراء ، الموظفين بانواعهم </span></div>
+                                        </label>
+                                    </div>
+                                    <ul class="parsley-errors-list" id="parsley-id-multiple-checkbox19"></ul>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="checkbox" class="header6" id="chkbx_41" value="إدارة محتوى التطبيق"
+                                            name="checkbox[11][]" data-hour="18" data-parsley-multiple="checkbox19"
+                                            data-parsley-id="4906">
+                                        <label for="chkbx_41">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-note">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader41">إدارة محتوى التطبيق
+                                                <br><span>التحكم الكامل في التطبيق </span></span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="checkbox" class="header6" id="chkbx_42" value="تقارير وإحصائيات"
+                                            name="checkbox[11][]" data-hour="12" data-parsley-multiple="checkbox19"
+                                            data-parsley-id="4906">
+                                        <label for="chkbx_42">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-bar-chart">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader42">تقارير وإحصائيات
+                                                <br><span>يومية ، شهرية ، سنوية</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="checkbox" class="header6" id="chkbx_43"
+                                            value="إدارة نظام الاشعارات" name="checkbox[11][]" data-hour="12"
+                                            data-parsley-multiple="checkbox19" data-parsley-id="4906">
+                                        <label for="chkbx_43">
+                                            <div class="icon-box">
+                                                <div class="vp-ic fa fa-line-chart">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader43">إدارة نظام الاشعارات
+                                                <br><span>التواصل مع العملاء وارسال العروض </span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <h1 class="nm block-head-text" id="20"> إختر المميزات التي تريد إضافتها للتطبيق </h1>
+                                <div class="col-xs-12 np mb70 admin-block two-section pull-right">
+                                    <div class="col-xs-12 col-sm-6 ic-check tip">
+                                        <input type="checkbox" class="header6" id="chkbx_45" value="الشراء من داخل ا"
+                                            name="checkbox[12][]" data-hour="20" data-parsley-multiple="checkbox20"
+                                            data-parsley-id="7325">
+                                        <label for="chkbx_45">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader45">الشراء من داخل التطبيق
+                                                <br><span>عملية الدفع من داخل التطبيق </span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip border-left-none">
+                                        <input type="checkbox" class="header6" id="chkbx_46" value="سلة تسوق"
+                                            name="checkbox[12][]" data-hour="17" data-parsley-multiple="checkbox20"
+                                            data-parsley-id="7325">
+                                        <label for="chkbx_46">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader46">سلة تسوق
+                                                <br><span>اختيار واضافة المنتجات لسلة المشتريات</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt ">
+                                        <input type="checkbox" class="header6" id="chkbx_49" value="نظام دردشة"
+                                            name="checkbox[12][]" data-hour="20" data-parsley-multiple="checkbox20"
+                                            data-parsley-id="7325">
+                                        <label for="chkbx_49">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader49">نظام دردشة
+                                                <br><span>تواصل مع عملائك عبر الدردشة المباشرة</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 ic-check tip bt border-left-none">
+                                        <input type="checkbox" class="header6" id="chkbx_50" value="نظام تقييمات"
+                                            name="checkbox[12][]" data-hour="12" data-parsley-multiple="checkbox20"
+                                            data-parsley-id="7325">
+                                        <label for="chkbx_50">
+                                            <div class="icon-box">
+                                                <div class="vp-ic icon-check">&nbsp;</div>
+                                            </div>
+                                            <div class="text" id="optionheader50">نظام تقييمات
+                                                <br><span>احصل على تقييمات العملاء لما تقدمه</span></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-green sliding-next mb100" data-slide="7">إستمرار <i class="fa fa-spinner fa-spin"></i></button>
+                    </div>
+                </section>
+                <section id="page7" class="page7 pages  hide">
+                    <div class="container">
+                        <h3 id="header6" class="featured-text header"> التكلفة التقديرية </h3>
+                        <div class="row">
+                            <div class="block text-right">
+                                <h4 class="subtext" style=" text-align: center; margin-bottom: 40px; font-size: 16px;">
+                                    نشكرك على ثقتك ،، سيتم ارسال عرض سعر نهاي بعد التواصل معك
+                                </h4>
+                                <div class="block text-right pb70">
+                                    <label class="head-prize hide">إجمالي التكلفة<br><br>
+                                        <span id="totalprice">0</span> ريال
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+        <style>
+            body.scrollbody {
+                overflow: hidden;
+                padding-left: 0px;
+            }
+        </style>
+        <script type="text/javascript" src="MobileAppCostCalculator/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="MobileAppCostCalculator/selectize.js"></script>
+        <script src="MobileAppCostCalculator/parsley.min.js"></script>
+        <script type="text/javascript" src="MobileAppCostCalculator/jquery.steps.min.js"></script>
+        <script type="text/javascript" src="MobileAppCostCalculator/inputmask.min.js"></script>
+        <script type="text/javascript" src="MobileAppCostCalculator/page.js"></script>
+        <script type="text/javascript" src="MobileAppCostCalculator/jquery.slimscroll.js"></script>
+        <script src="MobileAppCostCalculator/bootstrap.min(1).js"></script>
+
+        <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+                $("html").remove();
+            }
+
+            $(".get-started").click(function () {
+                $('body').removeClass('scrollbody');
+                $('body').addClass('bodybg');
+                $('.calculator-main').removeClass('map-bg2');
+                $('.page1').addClass('map-bg');
+                $(".page1 .featured-text").css("margin-top", "80px");
+                $(".page1 .subtext").css("margin-bottom", "80px");
+                $(".navbar").addClass("navbar-fixed-top");
+                $(".calculator-main").css("margin-top", "0px")
+            });
+
+            $(".sliding-next").click(function () {
+                $('body').css("overflow-y", "scroll");
+                $(this).hide();
+                /* next slide section to show*/
+                var slideNumber = $(this).data('slide');
+                $(".page" + slideNumber).addClass("show");
+                var divToShow = $('.page' + slideNumber);
+                $('html, body').animate({
+                    scrollTop: divToShow.offset().top - 25
+                }, 1000);
+            });
+
+            $(window).on('scroll', function () {
+                $('.pages.show').each(function () {
+                    var offset = $(this).offset();
+                    var fromTop = (offset.top - $(window).scrollTop());
+                    var selectPoint = $(this).attr('id');
+                    if (fromTop < 300 && fromTop > -$(this).height() + 300) {
+                        $('*[data-page="' + selectPoint + '"]').addClass('green').removeClass('grey');
+                    } else {
+                        if ($('*[data-page="' + selectPoint + '"]').hasClass('green'))
+                            $('*[data-page="' + selectPoint + '"]').removeClass('green').addClass(
+                                'grey');
+                    }
+                });
+            });
+
+            $('.slide-title').on('click', function (e) {
+                //remove class from selected dot
+                var slideNumber = $(this).children().find('span').data('slide');
+                if ($('.page' + slideNumber).hasClass('show')) {
+                    var divToShow = $('.page' + slideNumber);
+                    $('html, body').animate({
+                        scrollTop: divToShow.offset().top - 25
+                    }, 1000);
+                }
+            });
+
+            $(window).scroll(function () {
+                //alert($(this).scrollTop());
+                if ($(this).scrollTop() > 400) {
+                    $(".head-prize").removeClass("hide");
+                    $(".side-dots").removeClass("hide");
+                    $(".navbar").css("background", "#070d13");
+                } else {
+                    $(".head-prize").addClass("hide");
+                    $(".side-dots").addClass("hide");
+                    $(".navbar").css("background", "");
+                }
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var zoneqprice3 = 60;
+                $('#zoneqprice3').val(60);
+                var calculatedarrays = [];
+                var calculatedarraysvalues = [];
+                var hourcalculated = 0;
+
+                $("[id^=chkbx_] ").on("change", function () {
+                    var names = $(this).prop("name");
+                    var types = $(this).prop("type");
+                    var hours = $(this).data("hour");
+                    console.log($(this).prop("value"));
+                    console.log(names);
+                    if (types == 'radio') {
+                        if (calculatedarrays.indexOf(names) > -1) {
+                            hourcalculated -= eval(calculatedarraysvalues[names]);
+                            calculatedarraysvalues[names] = hours;
+                            hourcalculated += eval($(this).data("hour"));
+                        } else {
+                            calculatedarrays.push(names);
+                            calculatedarraysvalues[names] = hours;
+                            hourcalculated += eval($(this).data("hour"));
+                        }
+                    } else {
+                        if ($(this).prop("checked")) {
+                            hourcalculated += eval($(this).data("hour"));
+                        } else {
+                            hourcalculated -= eval($(this).data("hour"));
+                        }
+                    }
+
+                    $("#totalprice ").html((hourcalculated * zoneqprice3).toString().replace(
+                        /\B(?=(\d{3})+(?!\d))/g, ","));
+                    $("#total_price ").val(hourcalculated * zoneqprice3);
+                    $("#total_hour").val(hourcalculated);
+                });
+
+                $(".getdetailed").click(function () {
+                    $isChecked = 'false';
+                    $("[id^=chkbx_] ").each(function () {
+                        if ($(this).prop("checked")) {
+                            $isChecked = 'true';
+                        }
+                    });
+
+                    if ($isChecked == 'true') {
+                        var form = $('#wizard-validate');
+                        if (form.parsley().validate()) {
+                            $('#errorMessage').addClass('hide');
+                            var that = $(this);
+                            that.html("جاري الإرسال ..");
+                            that.attr('disabled', 'disabled');
+                            var hourcalculated = $("#total_hour").attr('value');
+
+                            setTimeout(function () {
+                                $('.page1').removeClass('show');
+                                $('#page1').removeClass('show');
+                                $('#page0').removeClass('show');
+                                $('#page2').removeClass('show');
+                                $('#page3').removeClass('show');
+                                $('#page4').removeClass('show');
+                                $('#page5').removeClass('show');
+                                $('#page6').removeClass('show');
+                                $('#page7').removeClass('show');
+
+                                $('.page1').addClass('hide');
+                                $('#page1').addClass('hide');
+                                $('#page0').addClass('hide');
+                                $('#page2').addClass('hide');
+                                $('#page3').addClass('hide');
+                                $('#page4').addClass('hide');
+                                $('#page5').addClass('hide');
+                                $('#page6').addClass('hide');
+                                $('#page7').addClass('hide');
+
+                                $('#page8').removeClass('hide');
+                                $('#page8').addClass('show');
+                            }, 2000);
+
+                            $.ajax({
+                                type: 'POST',
+                                url: "http://manara.ryada.sa/wp-admin/admin-ajax.php?action=calculators",
+                                data: form.serialize(),
+                                datatype: 'json',
+                                success: function (resPartial) {
+                                    $(".getestimate-btn").removeClass('hide');
+                                    $(".getestimate-btn2").addClass('hide');
+                                    $("#btn-id3").addClass('hide');
+                                    $("#etestimate-btn-id3").removeClass('hide');
+                                    $(".page8").removeClass("hide");
+                                    $("#navbar").css("display", "none");
+                                    $('body').css("overflow", "hidden");
+                                    $('.repsoneRest').addClass('hide');
+                                }
+                            });
+                        }
+                    } else {
+                        $('#result').modal('show');
+                    }
+                    return false;
+                });
+            });
+        </script>
+
+        <script type="text/javascript" src="MobileAppCostCalculator/jquery.vmap.min.js"></script>
+        <script type="text/javascript" src="MobileAppCostCalculator/jquery.vmap.world.js"></script>
+        <script type="text/javascript" src="MobileAppCostCalculator/jquery.vmap.sampledata.js"></script>
+        <div class="jqvmap-label"></div>
+    </div>
+    <span class="gr__tooltip">
+        <span class="gr__tooltip-content"></span>
+        <i class="gr__tooltip-logo"></i>
+        <span class="gr__triangle"></span>
+    </span>
+    </div>
+
+    </div><!-- #content -->
+</body>
+
+</html>

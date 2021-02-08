@@ -1,0 +1,10 @@
+
+
+@font-face {
+    font-family: "GESS";
+    src: url('GE_Dinar_One_Medium.eot'); /* IE9 Compat Modes */
+    src: url('GE_Dinar_One_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GE_Dinar_One_Medium.woff') format('woff'), /* Modern Browsers */
+         url('GE_Dinar_One_Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('GE_Dinar_One_Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+    }
