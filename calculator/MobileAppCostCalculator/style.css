@@ -348,6 +348,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .ic-check input[type=radio]:checked+label .vp-ic::before{
   content: '✅';
 }
+.ic-check input[type=checkbox]:checked+label .vp-ic::before{
+  content: '✅';
+}
 .bt {
   border-top: none;
 }
