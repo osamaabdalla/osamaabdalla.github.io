@@ -11,12 +11,19 @@
         function pingIt() {
             var node = document.getElementById('logo');
             domtoimage.toPng(node, {
-                    cacheBust: true
+                    cacheBust: true,
+                    background: 'white',
+                    quality: 0.95,
                 })
                 .then(function (dataUrl) {
                     var img = new Image();
                     img.src = dataUrl;
-                    document.body.appendChild(img);
+                    var temp = document.body.appendChild(img);
+                    domtoimage.toBlob(temp)
+                        .then(function (blob) {
+                            window.saveAs(blob, 'full_size.png');
+                        });
+                    temp.remove();
                 })
                 .catch(function (error) {
                     console.error('oops, something went wrong!', error);
