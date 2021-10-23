@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FittedModels</title>
+    <script src="dom-to-image.js"></script>
+    <script>
+        function pingIt() {
+            var node = document.getElementById('logo');
+            domtoimage.toPng(node, {
+                    cacheBust: true
+                })
+                .then(function (dataUrl) {
+                    var img = new Image();
+                    img.src = dataUrl;
+                    document.appendChild(img);
+                })
+                .catch(function (error) {
+                    console.error('oops, something went wrong!', error);
+                });
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <style>
+        body,
+        * {
+            font-family: 'Gugi', cursive;
+        }
+
+        .logo {
+            width: 390px;
+            height: 85px;
+            margin: 5px auto;
+            max-width: 80%;
+            max-height: 90%;
+        }
+
+        .logoImg {
+            width: 24.35%;
+            height: 94.11%;
+            float: left;
+            position: relative;
+            text-align: center;
+            padding-top: 1.285%;
+        }
+
+        .logoImg img {
+            max-width: 94.44%;
+            max-height: 90%;
+            position: absolute;
+            left: 0;
+        }
+
+        .logoImg img.img1 {}
+
+        .logoImg img.img2 {
+            left: 42.66%;
+            height: 84.15%;
+            top: 8.25%;
+            color: #01bcd4;
+        }
+
+        .logoImg img.img3 {
+            left: 17.92%;
+            top: 32.95%;
+            width: 56.9%;
+        }
+
+        .logoName {
+            display: block;
+            font-size: 274%;
+            color: #00bcd4;
+            font-weight: lighter;
+            float: left;
+            width: 75.65%;
+        }
+
+        .logoSlogan {
+            font-size: 112%;
+            font-weight: lighter;
+            display: block;
+            color: #545454;
+            float: left;
+            width: 74.62%;
+            padding-left: 0.515%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo" id="logo" onclick="pingIt()">
+        <div class="logoImg">
+            <img class="img1" src="image1.svg" />
+            <img class="img2" src="image2.svg" />
+            <img class="img3" src="image3.svg" />
+        </div>
+        <span class="logoName">Fitted Models</span>
+        <span class="logoSlogan">Ready Machine Learning Models</span>
+    </div>
+</body>
+
+</html>
