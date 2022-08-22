@@ -463,7 +463,8 @@ mark,
 
 .list-inline {
     padding-left: 0;
-    list-style: none
+    list-style: none;
+    margin: 0;
 }
 
 .list-inline-item {
@@ -2567,6 +2568,13 @@ textarea.form-control.is-invalid {
 .form-inline .form-check {
     width: 100%
 }
+.fa-linkedin-in.fa-w-14.fa-fw{
+    color: white
+}
+.profile-teaser, div.main-wrapper>section.overview-section, .cta-section.theme-bg-light {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
 
 @media (min-width: 576px) {
     .form-inline label {
@@ -2721,13 +2729,38 @@ fieldset:disabled a.btn {
     background-color: #4f4f4f;
     border-color: #4f4f4f
 }
-
+li.soicon{
+    width: 40px;
+    height: 40px;
+    min-width: auto !important;
+    margin: 1px 10px;
+}
+.soicon a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 100%;
+    margin: 0 auto;
+}
 .btn-secondary:hover {
     color: #fff;
     background-color: #3c3c3c;
     border-color: #363636
 }
-
+.collapse.show .navbar-nav .nav-item{
+    margin: 2px auto;
+    background-color: #27363f;
+    width: 91%;
+    text-align: center;
+    padding: 3px 0px;
+}
+.collapse.show .navbar-nav{
+    flex-direction: column !important;
+    width: 100%;
+}
+div.main-wrapper>section{
+    padding: 2px !important;
+}
 .btn-secondary:focus,
 .btn-secondary.focus {
     color: #fff;
@@ -4716,7 +4749,6 @@ input.btn-block[type="button"] {
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
-        min-width: 65%;
     }
 
     .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -4739,7 +4771,10 @@ input.btn-block[type="button"] {
 
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
-        flex-basis: auto
+        flex-basis: auto;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .navbar-expand-lg .navbar-toggler {
@@ -11034,7 +11069,7 @@ hr {
 }
 
 .theme-bg-light {
-    background: #fafafa !important
+    background: #f3f3f3 !important
 }
 
 .theme-bg-dark {
@@ -11050,8 +11085,9 @@ hr {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
-    width: 280px;
+    height: 52px;
+    width: 100%;
+    z-index: 99999999;
     background: var(--cool-gray-80,#283e4a);
     color: #fff;
     overflow-y: auto;
@@ -11070,9 +11106,10 @@ hr {
 }
 
 .header .blog-name {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #fff
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: -0.5px;
 }
 
 .header .blog-name a {
@@ -11095,11 +11132,15 @@ hr {
 }
 
 .header .navbar {
-    padding: 1.5rem 1rem
+    padding: 0px;
 }
 
 .header .navbar-toggler:focus {
     outline: none
+}
+
+.profile-image.rounded-circle{
+    margin-right: 10px;
 }
 
 .header .navbar-dark .navbar-toggler {
@@ -11108,7 +11149,9 @@ hr {
     -moz-opacity: .8;
     opacity: .8;
     border: 1px solid rgba(255, 255, 255, 0.8);
-    padding: .25rem .6rem
+    padding: 0.25rem 0.6rem;
+    margin: 15px 0px 0px 15px;
+    z-index: 99999;
 }
 
 .header .navbar-dark .navbar-toggler:hover {
@@ -11122,7 +11165,8 @@ hr {
 }
 
 .header .nav-item {
-    font-weight: bold
+    font-weight: normal;
+    min-width: 130px;
 }
 
 .header .nav-item.active .nav-link {
@@ -11170,7 +11214,8 @@ hr {
 }
 
 .profile-section .profile-image {
-    max-width: 160px;
+    width: 40px;
+    height: 40px;
     opacity: 1;
 }
 
@@ -11187,6 +11232,12 @@ hr {
     color: rgba(0, 0, 0, 0.6)
 }
 
+.profile-section {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
 .social-list a {
     width: 32px;
     height: 32px;
@@ -11196,6 +11247,17 @@ hr {
     border-radius: 50%;
     transition: all 0.4s ease-in-out;
     background-color: #fff
+}
+
+.social-cnt a {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    background-color: #fff;
+    line-height: 40px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11210,12 +11272,12 @@ hr {
 }
 
 .main-wrapper {
-    margin-left: 280px;
-    background: #fff
+    background: #fff;
+    padding-top: 52px;
 }
 
 .main-wrapper .container-single-col {
-    max-width: 820px
+
 }
 
 .cta-section .heading {
@@ -11339,20 +11401,8 @@ hr {
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
-    padding-left: 1.5rem
-}
-
-.section-title:before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 100%;
-    background: var(--cool-gray-80,#283e4a);
-    position: absolute;
-    left: 0;
-    top: 0
 }
 
 .profile-teaser .name {
@@ -11457,7 +11507,7 @@ hr {
 
 .testimonial-carousel .item-inner {
     border: 1px solid rgba(0, 0, 0, 0.025);
-    background: #fafafa;
+    background: #f3f3f3;
     height: 100%;
     position: relative
 }
@@ -11472,7 +11522,7 @@ hr {
     height: 0;
     border-style: solid;
     border-width: 40px 40px 0 0;
-    border-color: var(--cool-gray-80,#283e4a) transparent transparent transparent;
+    border-color: var(--cool-gray-80,#3de094) transparent transparent transparent;
     -webkit-transform: rotate(360deg)
 }
 
@@ -11528,10 +11578,14 @@ hr {
 
 .project-card {
     border-radius: 0;
-    background: #fafafa;
-    border: 1px solid rgba(0, 0, 0, 0.025);
+    background: #f3f3f3;
+    border: 1px solid #0000002b;
     position: relative;
     height: 100%;
+}
+
+.subsub .project-card {
+    background: #ffffff;
 }
 a.more-link {
     font-size: 13px;
@@ -11558,6 +11612,10 @@ a.more-link {
 
 .project-card .card-text {
     font-size: 0.875rem
+}
+
+.isotope-item .project-card .card-img-holder {
+    max-width: 85px;
 }
 
 .project-card .card-img-holder {
@@ -11596,7 +11654,7 @@ a.more-link {
 }
 
 .blog-post-card {
-    background: #fafafa;
+    background: #f3f3f3;
     border: 1px solid rgba(0, 0, 0, 0.025);
     height: 100%;
     border-radius: 0
@@ -11619,16 +11677,18 @@ a.more-link {
 
 .filters {
     list-style: none;
-    font-size: 0.875rem
+    font-size: 0.875rem;
+    background-color: #f1f1f1;
+    text-align: left;
 }
 
 .filters .type {
     display: inline-block;
-    padding: 0.275rem 0.25rem;
+    padding: 8px 15px;
     cursor: pointer;
-    margin-right: 2rem;
+    margin-right: 0px;
     color: #8f8f8f;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .filters .type:last-child {
@@ -11636,13 +11696,9 @@ a.more-link {
 }
 
 .filters .type.active {
-    border-top: 2px solid var(--cool-gray-80,#283e4a);
     color: var(--cool-gray-80,#283e4a);
-    font-weight: bold
-}
-
-.filters .type.active:hover {
-    border-top: 2px solid var(--cool-gray-80,#283e4a)
+    font-weight: bold;
+    background-color: gainsboro;
 }
 
 .filters .type:hover {
@@ -11700,7 +11756,7 @@ a.more-link {
     padding: 1.5rem;
     padding-left: 3rem;
     border: 1px solid rgba(0, 0, 0, 0.025);
-    background: #fafafa;
+    background: #f3f3f3;
     height: 100%;
     position: relative
 }
@@ -11750,7 +11806,7 @@ a.more-link {
 .pricing-table .pricing-package-title {
     font-size: 1rem;
     color: var(--cool-gray-80,#283e4a);
-    background: #fafafa;
+    background: #f3f3f3;
     text-align: center;
     padding: 1rem
 }
@@ -11765,7 +11821,7 @@ a.more-link {
 }
 
 .pricing-table tbody th {
-    background: #fafafa;
+    background: #f3f3f3;
     padding: 1rem;
     width: 30%;
     font-size: 0.875rem
@@ -12133,10 +12189,50 @@ a.resume-link:hover {
 }
 
 @media (max-width: 991.98px) {
+    .filters .type {
+        padding: 15px 20px;
+        margin-right: 3px;
+        color: #8f8f8f;
+        background: #eeeeee;
+        float: left;
+        margin-bottom: 1px !important;
+        width: 49%;
+    }
+    #filters{
+        clear: both;
+        margin-bottom: 20px !important;
+        float: left;
+    }
+    .filters .type.active {
+        border-top: 0;
+        color: var(--cool-gray-80,#283e4a);
+        font-weight: bold;
+        background-color: #dddddd;
+    }
+
+    .profile-teaser, .overview-section{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
     .header {
         position: static;
         width: inherit;
-        height: auto
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .soicon a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 0;
+        margin: 0 auto;
+    }
+    li.soicon {
+        height: 45px;
+    }
+
+    .collapse.show{
+        padding-top: 15px;
     }
 
     .header .blog-name {
@@ -12150,12 +12246,9 @@ a.resume-link:hover {
         width: 100%
     }
 
-    .header .navbar {
-        padding: 1rem
-    }
-
     .main-wrapper {
-        margin-left: 0
+        margin-left: 0;
+        padding-top: 10px;
     }
 
     .resume-aside {
@@ -12214,6 +12307,10 @@ body.dark-mode {
 
 body.dark-mode .theme-bg-light {
     background: #151e29 !important
+}
+
+.theme-bg-white {
+    background: #ffffff !important
 }
 
 body.dark-mode h1,
@@ -12652,12 +12749,27 @@ div.item-large-icon-cont {
 .hide-this{
     display: none !important;
 }
+.swiper-wrapper{
+    padding: 11px;
+}
+.swiper-slide{
+    float: left;
+    width: 25%;
+    margin: 0 0 0 0 !important;
+    border: 5px solid #f3f3f3;
+    border-radius: 17px;
+    overflow: hidden;
+    background-color: white;
+}
+.swiper-slide img{
+    width: 100%;
+}
 .item-inner i{
     position: absolute;
     top: 0px;
     left: 6px;
     z-index: 99999;
-    color: white;
+    color: black;
     font-style: normal;
 }
 img.projectslides{
@@ -12722,8 +12834,9 @@ a[href="https://www.linkedin.com/in/osamaabdallacom"], a[href="https://www.linke
     background-color: var(--blue-70,#0073b1);
 }
 a[href="https://github.com/osamaabdalla"], a[href="https://github.com/osamaabdalla"]:hover{
-    color: #24292e;
+    color: #24292e !important;
     background-color: white;
+    text-align: center;
 }
 a[href="https://stackoverflow.com/story/osamaabdalla"], a[href="https://stackoverflow.com/story/osamaabdalla"]:hover{
     color: white;
@@ -12744,9 +12857,28 @@ a[href="https://stackoverflow.com/story/osamaabdalla"] svg{
         left: 2px;
     }
     .profile-resume-links a{
-        width: 48%;
+        width: 47%;
+        padding: 6px 0px;
     }
     .profile-resume-links{
         margin-bottom: 25px !important;
     }
+}
+.storelinks a{
+    float: right;
+    width: 50%;
+}
+.storelinks {
+    width: 280px;
+    max-width: 100%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.app-link img, .play-link img{
+    width: 99%;
+    border-radius: 8px;
+}
+.app-link img{
+
 }
