@@ -790,7 +790,7 @@
                                 </h4>
                                 <div class="block text-right pb70">
                                     <label class="head-prize hide">إجمالي التكلفة<br><br>
-                                        <span id="totalprice">0</span> ريال
+                                        <span id="totalprice">0</span> دولار
                                     </label>
                                 </div>
                                 <div class="clearfix"></div>
@@ -919,9 +919,9 @@
                         }
                     }
 
-                    $("#totalprice ").html((hourcalculated * zoneqprice3).toString().replace(
+                    $("#totalprice ").html((hourcalculated * zoneqprice3 * 0.27).toString().replace(
                         /\B(?=(\d{3})+(?!\d))/g, ","));
-                    $("#total_price ").val(hourcalculated * zoneqprice3);
+                    $("#total_price ").val(hourcalculated * zoneqprice3 * 0.27);
                     $("#total_hour").val(hourcalculated);
                 });
 
