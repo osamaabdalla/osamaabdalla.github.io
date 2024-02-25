@@ -920,8 +920,8 @@
                         }
                     }
 
-                    $("#totalprice ").html((hourcalculated * zoneqprice3 * 0.27).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-                    $("#totaltime ").html(((hourcalculated * zoneqprice3 * 0.0027)?.toFixed(0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                    $("#totalprice ").html(((hourcalculated * zoneqprice3 * 0.27)?.toFixed(0)).toString());
+                    $("#totaltime ").html(((hourcalculated * zoneqprice3 * 0.0027)?.toFixed(0)).toString());
                     $("#total_price ").val(hourcalculated * zoneqprice3 * 0.27);
                     $("#total_hour").val(hourcalculated);
                 });
