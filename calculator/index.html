@@ -246,14 +246,14 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 ic-check tip bt ">
                                         <input type="radio" class="header2" id="chkbx_542" value="لم احدد"
-                                            name="checkbox[4]" data-hour="0" data-parsley-multiple="checkbox9"
+                                            name="checkbox[4]" data-hour="8" data-parsley-multiple="checkbox9"
                                             data-parsley-id="3989">
                                         <label for="chkbx_542">
                                             <div class="icon-box">
                                                 <div class="vp-ic fa fa-cog">&nbsp;</div>
                                             </div>
-                                            <div class="text" id="optionheader54">لم احدد
-                                                <br><span>للتحديد لاحقا</span></div>
+                                            <div class="text" id="optionheader54">نوع آخر
+                                                <br><span>اذا كان مختلف عن الخيارات</span></div>
                                         </label>
                                     </div>
                                 </div>
@@ -789,8 +789,9 @@
                                     نشكرك على ثقتك ،، <br> للحصول على عرض سعر نهائي الرجاء التواصل معنا
                                 </h4>
                                 <div class="block text-right pb70">
-                                    <label class="head-prize hide">إجمالي التكلفة<br><br>
+                                    <label class="head-prize hide" style=" padding-top: 60px; ">إجمالي التكلفة<br><br>
                                         <span id="totalprice">0</span> دولار
+                                        <span class="head-span " style="padding-top: 12px;font-size: 15px;display: block;">التسليم خلال <span id="totaltime">31</span> يوم</span>
                                     </label>
                                 </div>
                                 <div class="clearfix"></div>
@@ -919,8 +920,8 @@
                         }
                     }
 
-                    $("#totalprice ").html((hourcalculated * zoneqprice3 * 0.27).toString().replace(
-                        /\B(?=(\d{3})+(?!\d))/g, ","));
+                    $("#totalprice ").html((hourcalculated * zoneqprice3 * 0.27).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                    $("#totaltime ").html(((hourcalculated * zoneqprice3 * 0.0027)?.toFixed(0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
                     $("#total_price ").val(hourcalculated * zoneqprice3 * 0.27);
                     $("#total_hour").val(hourcalculated);
                 });
