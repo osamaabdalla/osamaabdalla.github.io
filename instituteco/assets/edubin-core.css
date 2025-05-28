@@ -1,0 +1,5923 @@
+/*!
+ * Edubin Core plugin Version: 9.3.14
+ */
+
+/**
+ * --------------------------------------
+ * # Animated Widget
+ * --------------------------------------
+ */
+
+ .edubin-animation-widget .edubin-animation-widget-color {
+    display: inline-block;
+}
+.edubin-animation-widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@media only screen and (max-width: 1199px) {
+    .edubin-parallax-item.edubin-parallax-disable-at-big-tablet {
+        transform: none !important;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .edubin-parallax-item.edubin-parallax-disable-at-small-tablet {
+        transform: none !important;
+    }
+}
+@keyframes bounceSlide {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.bounce-slide {
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: bounceSlide;
+}
+@-webkit-keyframes edubin-animated-transform-1 {
+    0%, 100% {
+        border-radius: 37% 63% 46% 54% / 48% 55% 45% 52%;
+    }
+    14% {
+        border-radius: 60% 40% 46% 54% / 60% 49% 51% 40%;
+    }
+    28% {
+        border-radius: 46% 54% 62% 38% / 70% 49% 51% 30%;
+    }
+    42% {
+        border-radius: 39% 61% 45% 55% / 38% 61% 39% 62%;
+    }
+    56% {
+        border-radius: 39% 61% 33% 67% / 50% 70% 30% 50%;
+    }
+    70% {
+        border-radius: 50% 50% 66% 34% / 68% 56% 44% 32%;
+    }
+    84% {
+        border-radius: 54% 46% 50% 50% / 61% 35% 65% 39%;
+    }
+}
+@keyframes edubin-animated-transform-1 {
+    0%, 100% {
+        border-radius: 37% 63% 46% 54% / 48% 55% 45% 52%;
+    }
+    14% {
+        border-radius: 60% 40% 46% 54% / 60% 49% 51% 40%;
+    }
+    28% {
+        border-radius: 46% 54% 62% 38% / 70% 49% 51% 30%;
+    }
+    42% {
+        border-radius: 39% 61% 45% 55% / 38% 61% 39% 62%;
+    }
+    56% {
+        border-radius: 39% 61% 33% 67% / 50% 70% 30% 50%;
+    }
+    70% {
+        border-radius: 50% 50% 66% 34% / 68% 56% 44% 32%;
+    }
+    84% {
+        border-radius: 54% 46% 50% 50% / 61% 35% 65% 39%;
+    }
+}
+@-webkit-keyframes edubin-animated-transform-2 {
+    0% {
+        border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+    }
+    50% {
+        border-radius: 60% 30% 40% 70% / 60% 50% 60% 30%;
+    }
+    100% {
+        border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+    }
+}
+@keyframes edubin-animated-transform-2 {
+    0% {
+        border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+    }
+    50% {
+        border-radius: 60% 30% 40% 70% / 60% 50% 60% 30%;
+    }
+    100% {
+        border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+    }
+}
+@-webkit-keyframes edubin-animated-transform-3 {
+    50% {
+        border-radius: 550px 750px 750px 350px / 750px 350px 450px 550px;
+    }
+    100% {
+        border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+    }
+}
+@keyframes edubin-animated-transform-3 {
+    50% {
+        border-radius: 550px 750px 750px 350px / 750px 350px 450px 550px;
+    }
+    100% {
+        border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+    }
+}
+@-webkit-keyframes edubin-animated-transform-4 {
+    0% {
+        border-radius: 70% 30% 30% 70% / 30% 30% 70% 70%;
+    }
+    25% {
+        border-radius: 42% 58% 25% 75% / 46% 76% 24% 54%;
+    }
+    50% {
+        border-radius: 50% 50% 67% 33% / 27% 55% 45% 73%;
+    }
+    75% {
+        border-radius: 67% 33% 42% 58% / 68% 63% 37% 32%;
+    }
+}
+@keyframes edubin-animated-transform-4 {
+    0% {
+        border-radius: 70% 30% 30% 70% / 30% 30% 70% 70%;
+    }
+    25% {
+        border-radius: 42% 58% 25% 75% / 46% 76% 24% 54%;
+    }
+    50% {
+        border-radius: 50% 50% 67% 33% / 27% 55% 45% 73%;
+    }
+    75% {
+        border-radius: 67% 33% 42% 58% / 68% 63% 37% 32%;
+    }
+}
+@-webkit-keyframes edubin-animated-transform-5 {
+    20% {
+        border-radius: 55% 45% 38% 62% / 51% 53% 47% 49%;
+    }
+    40% {
+        border-radius: 55% 45% 51% 49% / 51% 36% 64% 49%;
+    }
+    60% {
+        border-radius: 40% 60% 43% 57% / 62% 47% 53% 38%;
+    }
+    80% {
+        border-radius: 40% 60% 68% 32% / 36% 38% 62% 64%;
+    }
+}
+@keyframes edubin-animated-transform-5 {
+    20% {
+        border-radius: 55% 45% 38% 62% / 51% 53% 47% 49%;
+    }
+    40% {
+        border-radius: 55% 45% 51% 49% / 51% 36% 64% 49%;
+    }
+    60% {
+        border-radius: 40% 60% 43% 57% / 62% 47% 53% 38%;
+    }
+    80% {
+        border-radius: 40% 60% 68% 32% / 36% 38% 62% 64%;
+    }
+}
+@-webkit-keyframes edubin-circle-small {
+    0% {
+        -webkit-transform: rotate(0deg) translate(25px) rotate(0deg);
+        transform: rotate(0deg) translate(25px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) translate(25px) rotate(360deg);
+        transform: rotate(-360deg) translate(25px) rotate(360deg);
+    }
+}
+@keyframes edubin-circle-small {
+    0% {
+        -webkit-transform: rotate(0deg) translate(25px) rotate(0deg);
+        transform: rotate(0deg) translate(25px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) translate(25px) rotate(360deg);
+        transform: rotate(-360deg) translate(25px) rotate(360deg);
+    }
+}
+@-webkit-keyframes edubin-circle-medium {
+    0% {
+        -webkit-transform: rotate(0deg) translate(100px) rotate(0deg);
+        transform: rotate(0deg) translate(100px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) translate(100px) rotate(360deg);
+        transform: rotate(-360deg) translate(100px) rotate(360deg);
+    }
+}
+@keyframes edubin-circle-medium {
+    0% {
+        -webkit-transform: rotate(0deg) translate(100px) rotate(0deg);
+        transform: rotate(0deg) translate(100px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) translate(100px) rotate(360deg);
+        transform: rotate(-360deg) translate(100px) rotate(360deg);
+    }
+}
+@-webkit-keyframes edubin-circle-large {
+    0% {
+        -webkit-transform: rotate(0deg) translate(150px) rotate(0deg);
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) translate(150px) rotate(360deg);
+        transform: rotate(-360deg) translate(150px) rotate(360deg);
+    }
+}
+@keyframes edubin-circle-large {
+    0% {
+        -webkit-transform: rotate(0deg) translate(150px) rotate(0deg);
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) translate(150px) rotate(360deg);
+        transform: rotate(-360deg) translate(150px) rotate(360deg);
+    }
+}
+@-webkit-keyframes edubin-fade-in-out {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@keyframes edubin-fade-in-out {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@-webkit-keyframes edubin-flipX {
+    from {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+    to {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}
+@keyframes edubin-flipX {
+    from {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+    to {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}
+@-webkit-keyframes edubin-flipY {
+    from {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+    to {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+@keyframes edubin-flipY {
+    from {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+    to {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+@-webkit-keyframes edubin-vsm-y-move {
+    0% {
+        -webkit-transform: translate(0, -30%);
+        transform: translate(0, -30%);
+    }
+    100% {
+        -webkit-transform: translate(0, 30%);
+        transform: translate(0, 30%);
+    }
+}
+@keyframes edubin-vsm-y-move {
+    0% {
+        -webkit-transform: translate(0, -30%);
+        transform: translate(0, -30%);
+    }
+    100% {
+        -webkit-transform: translate(0, 30%);
+        transform: translate(0, 30%);
+    }
+}
+@-webkit-keyframes edubin-vsm-y-reverse-move {
+    0% {
+        -webkit-transform: translate(0, 30%);
+        transform: translate(0, 30%);
+    }
+    100% {
+        -webkit-transform: translate(0, -30%);
+        transform: translate(0, -30%);
+    }
+}
+@keyframes edubin-vsm-y-reverse-move {
+    0% {
+        -webkit-transform: translate(0, 30%);
+        transform: translate(0, 30%);
+    }
+    100% {
+        -webkit-transform: translate(0, -30%);
+        transform: translate(0, -30%);
+    }
+}
+@-webkit-keyframes edubin-sm-y-move {
+    0% {
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+    100% {
+        -webkit-transform: translate(0, 50%);
+        transform: translate(0, 50%);
+    }
+}
+@keyframes edubin-sm-y-move {
+    0% {
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+    100% {
+        -webkit-transform: translate(0, 50%);
+        transform: translate(0, 50%);
+    }
+}
+@-webkit-keyframes edubin-md-y-move {
+    0% {
+        -webkit-transform: translate(0, -100%);
+        transform: translate(0, -100%);
+    }
+    100% {
+        -webkit-transform: translate(0, 100%);
+        transform: translate(0, 100%);
+    }
+}
+@keyframes edubin-md-y-move {
+    0% {
+        -webkit-transform: translate(0, -100%);
+        transform: translate(0, -100%);
+    }
+    100% {
+        -webkit-transform: translate(0, 100%);
+        transform: translate(0, 100%);
+    }
+}
+@-webkit-keyframes edubin-lg-y-move {
+    0% {
+        -webkit-transform: translate(0, -150%);
+        transform: translate(0, -150%);
+    }
+    100% {
+        -webkit-transform: translate(0, 150%);
+        transform: translate(0, 150%);
+    }
+}
+@keyframes edubin-lg-y-move {
+    0% {
+        -webkit-transform: translate(0, -150%);
+        transform: translate(0, -150%);
+    }
+    100% {
+        -webkit-transform: translate(0, 150%);
+        transform: translate(0, 150%);
+    }
+}
+@-webkit-keyframes edubin-sm-x-move {
+    0% {
+        -webkit-transform: translate(50%, 0);
+        transform: translate(50%, 0);
+    }
+    100% {
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes edubin-sm-x-move {
+    0% {
+        -webkit-transform: translate(50%, 0);
+        transform: translate(50%, 0);
+    }
+    100% {
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+@-webkit-keyframes edubin-md-x-move {
+    0% {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+    }
+}
+@keyframes edubin-md-x-move {
+    0% {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+    }
+}
+@-webkit-keyframes edubin-lg-x-move {
+    0% {
+        -webkit-transform: translate(150%, 0);
+        transform: translate(150%, 0);
+    }
+    100% {
+        -webkit-transform: translate(-150%, 0);
+        transform: translate(-150%, 0);
+    }
+}
+@keyframes edubin-lg-x-move {
+    0% {
+        -webkit-transform: translate(150%, 0);
+        transform: translate(150%, 0);
+    }
+    100% {
+        -webkit-transform: translate(-150%, 0);
+        transform: translate(-150%, 0);
+    }
+}
+@-webkit-keyframes edubin-sm-xy-move {
+    0% {
+        -webkit-transform: translate(10%, -10%);
+        transform: translate(10%, -10%);
+    }
+    100% {
+        -webkit-transform: translate(-10%, 10%);
+        transform: translate(-10%, 10%);
+    }
+}
+@keyframes edubin-sm-xy-move {
+    0% {
+        -webkit-transform: translate(10%, -10%);
+        transform: translate(10%, -10%);
+    }
+    100% {
+        -webkit-transform: translate(-10%, 10%);
+        transform: translate(-10%, 10%);
+    }
+}
+@-webkit-keyframes edubin-md-xy-move {
+    0% {
+        -webkit-transform: translate(25%, -25%);
+        transform: translate(25%, -25%);
+    }
+    100% {
+        -webkit-transform: translate(-25%, 25%);
+        transform: translate(-25%, 25%);
+    }
+}
+@keyframes edubin-md-xy-move {
+    0% {
+        -webkit-transform: translate(25%, -25%);
+        transform: translate(25%, -25%);
+    }
+    100% {
+        -webkit-transform: translate(-25%, 25%);
+        transform: translate(-25%, 25%);
+    }
+}
+@-webkit-keyframes edubin-lg-xy-move {
+    0% {
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+    }
+    100% {
+        -webkit-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+    }
+}
+@keyframes edubin-lg-xy-move {
+    0% {
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+    }
+    100% {
+        -webkit-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+    }
+}
+@-webkit-keyframes edubin-sm-yx-move {
+    0% {
+        -webkit-transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%);
+    }
+    100% {
+        -webkit-transform: translate(10%, 10%);
+        transform: translate(10%, 10%);
+    }
+}
+@keyframes edubin-sm-yx-move {
+    0% {
+        -webkit-transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%);
+    }
+    100% {
+        -webkit-transform: translate(10%, 10%);
+        transform: translate(10%, 10%);
+    }
+}
+@-webkit-keyframes edubin-md-yx-move {
+    0% {
+        -webkit-transform: translate(-25%, -25%);
+        transform: translate(-25%, -25%);
+    }
+    100% {
+        -webkit-transform: translate(25%, 25%);
+        transform: translate(25%, 25%);
+    }
+}
+@keyframes edubin-md-yx-move {
+    0% {
+        -webkit-transform: translate(-25%, -25%);
+        transform: translate(-25%, -25%);
+    }
+    100% {
+        -webkit-transform: translate(25%, 25%);
+        transform: translate(25%, 25%);
+    }
+}
+@-webkit-keyframes edubin-lg-yx-move {
+    0% {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        -webkit-transform: translate(50%, 50%);
+        transform: translate(50%, 50%);
+    }
+}
+@keyframes edubin-lg-yx-move {
+    0% {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        -webkit-transform: translate(50%, 50%);
+        transform: translate(50%, 50%);
+    }
+}
+@-webkit-keyframes edubin-rotate-x {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@keyframes edubin-rotate-x {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes edubin-rotate-y {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes edubin-rotate-y {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes edubin-swing {
+    20% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+    40% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    60% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+    80% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+@keyframes edubin-swing {
+    20% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+    40% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    60% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+    80% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+@-webkit-keyframes edubin-zoom-in-out {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+}
+
+/**
+ * --------------------------------------
+ * # Additional Animation
+ * --------------------------------------
+ */
+
+@-webkit-keyframes edubin--slide-down {
+    0% {
+        -webkit-transform: translate3d(0, -3rem, 0);
+        transform: translate3d(0, -3rem, 0);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes edubin--slide-down {
+    0% {
+        -webkit-transform: translate3d(0, -3rem, 0);
+        transform: translate3d(0, -3rem, 0);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.edubin--slide-down {
+    animation-name: edubin--slide-down;
+}
+@-webkit-keyframes edubin--slide-left {
+    0% {
+        -webkit-transform: translate3d(-3rem, 0, 0);
+        transform: translate3d(-3rem, 0, 0);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes edubin--slide-left {
+    0% {
+        -webkit-transform: translate3d(-3rem, 0, 0);
+        transform: translate3d(-3rem, 0, 0);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.edubin--slide-left {
+    animation-name: edubin--slide-left;
+}
+@-webkit-keyframes edubin--slide-right {
+    0% {
+        -webkit-transform: translate3d(3rem, 0, 0);
+        transform: translate3d(3rem, 0, 0);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes edubin--slide-right {
+    0% {
+        -webkit-transform: translate3d(3rem, 0, 0);
+        transform: translate3d(3rem, 0, 0);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.edubin--slide-right {
+    animation-name: edubin--slide-right;
+}
+@keyframes edubin--scale {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale(0.8) translateY(50px);
+        -moz-transform: scale(0.8) translateY(50px);
+        -ms-transform: scale(0.8) translateY(50px);
+        -o-transform: scale(0.8) translateY(50px);
+        transform: scale(0.8) translateY(50px);
+        transition-property: opacity, transform;
+        transition-duration: 1.2s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+@-webkit-keyframes edubin--scale {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale(0.8) translateY(50px);
+        -moz-transform: scale(0.8) translateY(50px);
+        -ms-transform: scale(0.8) translateY(50px);
+        -o-transform: scale(0.8) translateY(50px);
+        transform: scale(0.8) translateY(50px);
+        transition-property: opacity, transform;
+        transition-duration: 1.2s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+.edubin--scale {
+    animation-name: edubin--scale;
+}
+@-webkit-keyframes edubin--fancy {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: translateY(110px) rotateY(-20deg);
+        -moz-transform: translateY(110px) rotateY(-20deg);
+        -ms-transform: translateY(110px) rotateY(-20deg);
+        -o-transform: translateY(110px) rotateY(-20deg);
+        transform: translateY(110px) rotateY(-20deg);
+        transform-origin: right;
+        transition-property: opacity, transform;
+        transition-duration: 1.2s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+@keyframes edubin--fancy {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: translateY(110px) rotateY(-20deg);
+        -moz-transform: translateY(110px) rotateY(-20deg);
+        -ms-transform: translateY(110px) rotateY(-20deg);
+        -o-transform: translateY(110px) rotateY(-20deg);
+        transform: translateY(110px) rotateY(-20deg);
+        transform-origin: right;
+        transition-property: opacity, transform;
+        transition-duration: 1.2s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+.edubin--fancy {
+    animation-name: edubin--fancy;
+}
+@-webkit-keyframes edubin--bounce-infinite {
+    0% {
+        transform: translateY(0%);
+    }
+    15% {
+        transform: translateY(-25%);
+    }
+    30% {
+        transform: translateY(20%);
+    }
+    45% {
+        transform: translateY(-15%);
+    }
+    60% {
+        transform: translateY(10%);
+    }
+    75% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes edubin--bounce-infinite {
+    0% {
+        transform: translateY(0%);
+    }
+    15% {
+        transform: translateY(-25%);
+    }
+    30% {
+        transform: translateY(20%);
+    }
+    45% {
+        transform: translateY(-15%);
+    }
+    60% {
+        transform: translateY(10%);
+    }
+    75% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.edubin--bounce-infinite {
+    animation-name: edubin--bounce-infinite;
+    animation-iteration-count: 2;
+}
+/**
+ * --------------------------------------
+ * # swiper-navigation
+ * --------------------------------------
+ */
+
+.swiper-navigation .swiper-btn-nxt img, .swiper-navigation .swiper-btn-prv img {
+    transition: 0s;
+}
+.swiper-navigation .swiper-btn-nxt:hover, .swiper-navigation .swiper-btn-prv:hover {
+    color: var(--edubin-color-white);
+    background: var(--edubin-gradient-primary);
+}
+.swiper-navigation .swiper-btn-nxt:hover img, .swiper-navigation .swiper-btn-prv:hover img {
+    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(321deg) brightness(101%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(321deg) brightness(101%) contrast(103%);
+}
+/* ## Elementor Conflict */
+
+.elementor-element .swiper.tpc-testimonial .swiper-horizontal>.swiper-pagination-bullets, .elementor-element .swiper.tpc-testimonial .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper.tpc-testimonial .swiper-pagination-custom, .elementor-element .swiper.tpc-testimonial .swiper-pagination-fraction, .elementor-lightbox .swiper.tpc-testimonial .swiper-horizontal>.swiper-pagination-bullets, .elementor-lightbox .swiper.tpc-testimonial .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper.tpc-testimonial .swiper-pagination-custom, .elementor-lightbox .swiper.tpc-testimonial .swiper-pagination-fraction {
+    bottom: 10px;
+}
+/**
+ * -------------------------------------------------------
+ * # Nav Menu Elementor Widget
+ * -------------------------------------------------------
+ */
+
+nav.edubin-el-menu-list {
+    display: flex;
+}
+.edubin-nav-dropdown-menu {
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 1199px) {
+    .edubin-mobile-menu nav.edubin-el-menu-list ul.edubin-nav-dropdown-menu {
+        flex-shrink: 0;
+        width: 100%;
+    }
+}
+ul.footer-navigation-menu {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+Filter Isotope
+--------------------------------------------------------------*/
+
+.edubin-filter-course, .edubin-gallery-filter-control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+}
+.edubin-filter-course .filter-item, .edubin-gallery-filter-control button {
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: var(--edubin-p-medium);
+    text-transform: capitalize;
+    background-color: transparent;
+    color: var(--edubin-color-body);
+    padding: 9px 18px;
+    border: none;
+    margin: 0px;
+    -webkit-transition: var(--edubin-transition);
+    transition: var(--edubin-transition);
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+}
+.edubin-filter-course .filter-item.current {
+    padding: 9px 18px;
+    border-radius: 100px;
+    background: #eee;
+}
+.edubin-filter-course .filter-item:hover:after, .edubin-filter-course .filter-item.current:after, .edubin-gallery-filter-control button:hover:after, .edubin-gallery-filter-control button.current:after {
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.edubin-gallery-items-wrapper {
+    margin: 0 -15px -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.edubin-gallery-filter-single-item {
+    margin-bottom: 30px;
+}
+.edu-gallery-grid {
+    position: relative;
+}
+.edu-gallery-grid .inner::before {
+    background: -webkit-linear-gradient(-235deg, var(--edubin-primary-color-alt) 0%, var(--edubin-primary-color) 100%);
+    background: linear-gradient(-235deg, var(--edubin-primary-color-alt) 0%, var(--edubin-primary-color) 100%);
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.edu-gallery-grid img {
+    border-radius: 5px;
+    width: 100%;
+}
+.edu-gallery-grid .zoom-icon {
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    background-color: var(--edubin-color-white);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    color: var(--edubin-primary-color);
+    cursor: pointer;
+}
+.edu-gallery-grid:hover .inner:before {
+    opacity: .9;
+}
+.edu-gallery-grid:hover .zoom-icon {
+    top: 50%;
+    opacity: 1;
+}
+/*--------------------------------------------------------------
+Progressbar (Elementor)
+--------------------------------------------------------------*/
+
+.edubin-progress-bar .elementor-progress-percentage {
+    position: relative;
+    top: -22px;
+}
+/**
+* -------------------
+* # Progressbar (Edubin)
+* -------------------
+*/
+
+.tpc-single-progressbar.sal-animate[data-sal] {
+    animation-name: inherit;
+    animation-duration: inherit;
+}
+.tpc-single-progressbar .tpc-progressbar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+}
+.tpc-single-progressbar .tpc-progressbar-inner {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    -webkit-transition: width 1.2s ease-in-out;
+    -moz-transition: width 1.2s ease-in-out;
+    transition: width 1.2s ease-in-out;
+    max-width: 100%;
+}
+.tpc-single-progressbar.sal-animate[data-sal] .tpc-progressbar-inner {
+    background-color: var(--edubin-primary-color);
+}
+.tpc-single-progressbar .tpc-progressbar-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.tpc-single-progressbar .tpc-progressbar-content h6 {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--edubin-heading-color);
+    margin: 0;
+}
+.tpc-single-progressbar .tpc-progressbar-counter-wrapper {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--edubin-heading-color);
+}
+/*===============================================================
+ ##Animation Effects 
+ =================================================================*/
+
+@-webkit-keyframes round {
+    0% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+@keyframes round {
+    0% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+@-webkit-keyframes bounce-animate {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes bounce-animate {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@-webkit-keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% -100%, 100% 100%, -100% 100%, -100% 100%);
+    }
+    50% {
+        transform: translateY(50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+    }
+    60% {
+        transform: translateY(50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% -100%, 100% 100%, -100% 100%, -100% 100%);
+    }
+}
+@-webkit-keyframes round-01 {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+@keyframes round-01 {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+/*===============================================================
+ ##Swiper Pagination
+ =================================================================*/
+
+.swiper-pagination .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: #e3e3e3;
+    opacity: 1;
+    margin: 0 7px !important;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--edubin-primary-color);
+}
+/*===============================================================
+ ##Section 1 addon 
+ =================================================================*/
+
+.edubin-section-addon-1 {
+    position: relative;
+    display: block;
+    height: 600px;
+    width: 570px;
+}
+.edubin-section-addon-1 .front-image-1 {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.edubin-section-addon-1 .front-image-1 img {
+    width: 465px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.edubin-section-addon-1 .front-image-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.edubin-section-addon-1 .front-image-2 img {
+    width: 262px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 109px 0px rgba(0, 0, 0, 0.24);
+}
+/*===============================================================
+ ##Hero Section 2
+ =================================================================*/
+
+.edubin-hero-2 {
+    min-height: 830px;
+    display: block;
+    position: relative;
+    background: #ecf5f4;
+    z-index: 1;
+}
+.edubin-hero-2 .img-shape-2 {
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    z-index: -1;
+}
+.edubin-hero-2.edubin-section-3 .img-shape-2 {
+    position: absolute;
+    right: 0;
+    top: initial;
+    bottom: 0;
+    z-index: -1;
+}
+.edubin-hero-2 .img-shape-3 {
+    position: absolute;
+    right: 32%;
+    bottom: 50px;
+    z-index: -1;
+}
+.edubin-hero-2.edubin-section-3 .img-shape-3 {
+    position: absolute;
+    right: initial;
+    bottom: 130px;
+    z-index: -1;
+    left: 40%;
+}
+.edubin-hero-2 .img-shape-4 {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    z-index: -1;
+}
+.edubin-hero-2.edubin-section-3 .img-shape-4 {
+    position: absolute;
+    left: 18%;
+    top: 28%;
+    z-index: -1;
+}
+.edubin-hero-2 .hero-content {
+    top: 220px;
+    position: relative;
+    z-index: 2;
+}
+.hero-content .sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #9aa4af;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.edubin-hero-2.edubin-section-3 .hero-content .sub-title {
+    text-transform: initial;
+    font-weight: 400;
+}
+.hero-content .title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #29303b;
+    line-height: 66px;
+    margin-top: 15px;
+}
+.hero-content .title span {
+    position: relative;
+}
+.edubin-hero-2.edubin-section-3 .hero-content .title span:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background: #0071dc;
+    width: 100%;
+    bottom: -3px;
+}
+.edubin-hero-2 .hero-images {
+    padding-top: 175px;
+    position: relative;
+    z-index: 1;
+}
+.edubin-hero-2.edubin-section-3 .hero-images {
+    padding-top: inherit;
+    bottom: 0;
+    position: relative;
+    top: inherit;
+}
+.edubin-hero-2 .hero-images .img-shape-1 {
+    position: absolute;
+    z-index: -1;
+    bottom: 138px;
+    left: 0;
+    padding-right: 20px;
+}
+.edubin-hero-2 .hero-images .img-man {
+    text-align: right;
+    position: relative;
+}
+/* new */
+
+.edubin-hero-2 .hero-images .img-man.edubin-img-overlay::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+/* animation 1 */
+
+.edubin-hero-2.edubin-section-3 .img-shape-3.anim-1, .edubin-hero-2.edubin-section-3 .img-shape-4.anim-1 {
+    -webkit-animation: up-down 5s linear infinite;
+    animation: up-down 5s linear infinite;
+}
+.edubin-hero-2.edubin-section-3 .hero-images .img-shape-1.anim-1 {
+    -webkit-animation: up-down 5s linear infinite;
+    animation: up-down 5s linear infinite;
+}
+/* animation 2 */
+
+.edubin-hero-2.edubin-section-3 .img-shape-3.anim-2, .edubin-hero-2.edubin-section-3 .img-shape-4.anim-2 {
+    -webkit-animation: round-01 5s linear infinite;
+    animation: round-01 5s linear infinite;
+}
+.edubin-hero-2.edubin-section-3 .hero-images .img-shape-1.anim-2 {
+    animation: spin 4s infinite linear;
+    transition: opacity 1s ease, stroke-width 1s ease;
+}
+/* animation 3 */
+
+.edubin-hero-2.edubin-section-3 .hero-images .img-shape-1.anim-3 {
+    -webkit-animation: round-01 5s linear infinite;
+    animation: round-01 5s linear infinite;
+}
+.edubin-hero-2.edubin-section-3 .img-shape-3.anim-3, .edubin-hero-2.edubin-section-3 .img-shape-4.anim-3 {
+    -webkit-animation: round-01 5s linear infinite;
+    animation: round-01 5s linear infinite
+}
+@media (max-width: 1399px) {
+    .edubin-hero-2 .img-shape-4 {
+        top: 10%;
+    }
+}
+@media (max-width: 1199px) {
+    .edubin-hero-2 .hero-content .title {
+        font-size: 40px;
+        line-height: 54px;
+    }
+    .edubin-hero-2 .hero-images {
+        padding-top: 150px;
+    }
+    .edubin-hero-2 .hero-images .img-shape-1 {
+        max-width: 420px;
+        bottom: 100px;
+        left: 0;
+    }
+}
+@media (max-width: 991px) {
+    .edubin-hero-2 .hero-images .img-man {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .edubin-hero-2 .hero-images .img-shape-1 {
+        left: 80px;
+    }
+    .edubin-hero-2 .img-shape-4 {
+        top: 26%;
+    }
+    .edubin-hero-2 .img-shape-2 {
+        top: 47%;
+    }
+    .edubin-hero-2 .img-shape-3 {
+        right: 6%;
+        bottom: 17px;
+    }
+    .edubin-hero-2 .img-shape-3 img {
+        width: 110px;
+    }
+    .edubin-hero-2 .hero-content {
+        top: 60px;
+    }
+    .edubin-section-3 .img-shape-3.img-hide, .edubin-section-3 .img-shape-4.img-hide, .edubin-section-3 .hero-images .img-shape-1.img-hide {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .edubin-hero-2 .hero-images .img-shape-1 {
+        left: 50px;
+        bottom: 65px;
+    }
+    .edubin-hero-2 .hero-images .img-shape-1 img {
+        width: 450px;
+    }
+    .edubin-hero-2 .hero-images .img-man img {
+        width: 400px;
+    }
+    .edubin-hero-2 .img-shape-4 {
+        top: 35%;
+    }
+}
+@media (max-width: 575px) {
+    .edubin-hero-2 .hero-images .img-shape-1 {
+        left: 60px;
+        bottom: 90px;
+    }
+    .edubin-hero-2 .img-shape-2 {
+        top: 54%;
+        right: -23%;
+    }
+    .edubin-hero-2 .img-shape-4 {
+        top: 48%;
+    }
+    .edubin-hero-2 .img-shape-3 {
+        right: 2%;
+        bottom: 5px;
+    }
+    .edubin-hero-2 .img-shape-3 img {
+        width: 95px;
+    }
+}
+.front-image-content {
+    position: absolute;
+    top: 50%;
+    right: 55px;
+    text-align: right;
+    padding-right: 50px;
+    padding-left: 28px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 62px 0px rgb(0 0 0 / 23%);
+}
+.front-image-content .hero-content-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.front-image-content .hero-content-heading span {
+    color: var(--edubin-primary-color);
+}
+.front-image-content p {
+    color: #ababab;
+    margin-bottom: 0;
+}
+.front-image-content .image-icon {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: var(--edubin-primary-color);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 575px) {
+    .front-image-content {
+        padding-right: 40px;
+        max-width: 245px
+    }
+    .front-image-content .image-icon {
+        right: -25px
+    }
+    .front-image-content .image-icon {
+        width: 51px;
+        height: 51px;
+        line-height: 60px;
+        font-size: 24px
+    }
+}
+/*===============================================================
+ ##Hero Section 4
+ =================================================================*/
+
+.edubin-hero-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 70%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.edubin-hero-4 .shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(35%, -3%);
+    z-index: -1;
+}
+.edubin-hero-4 .shape-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(31%, -24%);
+    z-index: -1;
+}
+.edubin-hero-4 .shape-3 {
+    position: absolute;
+    bottom: 140px;
+    right: -10px;
+    z-index: -1;
+    -webkit-animation: round 7s linear infinite;
+    animation: round 7s linear infinite;
+}
+.edubin-hero-4 .shape-5 {
+    position: absolute;
+    bottom: 48%;
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ff9071;
+    border-radius: 50%;
+    -webkit-animation: zoom-in 5s linear infinite;
+    animation: zoom-in 5s linear infinite;
+    z-index: -1;
+}
+.edubin-hero-4 .shape-6 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-74%, 32%);
+    z-index: -1;
+}
+.edubin-hero-4 .shape-7 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-52%, 70%);
+    z-index: -2;
+}
+.edubin-hero-4 .hero-content {
+    max-width: 600px;
+    padding-top: 120px;
+    position: relative;
+}
+.edubin-hero-4 .hero-content .shape-4 {
+    position: absolute;
+    bottom: -95px;
+    right: 15px;
+    z-index: -1;
+    -webkit-animation: bounce-animate 5s infinite linear;
+    animation: bounce-animate 5s infinite linear;
+}
+.edubin-hero-4 .hero-content .sign img {
+    margin: 0;
+    margin-bottom: 25px;
+}
+.edubin-hero-4 .title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-top: 15px;
+}
+.edubin-hero-4 .title span {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 40px;
+}
+.edubin-hero-4 .description {
+    margin-top: 20px;
+}
+@media only screen and (max-width: 450px) {
+    .edubin-hero-4 .title span {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+/*End hero 4*/
+
+/*===============================================================
+ ##Hero Section 5
+ =================================================================*/
+
+.edubin-section-5 {
+    position: relative;
+    padding: 15px 0px 125px 0px;
+}
+.edubin-section-5 .shape-1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    z-index: 2;
+}
+.edubin-section-5 .shape-1>img {
+    height: 390px;
+}
+.edubin-section-5 .hero-content {
+    padding-top: 100px;
+    position: relative;
+    z-index: 3;
+}
+.edubin-section-5 .hero-content .hero-skill-wrap {
+    margin-top: 55px;
+}
+.edubin-section-5 .hero-content .hero-skill-wrap .hero-feature-item {
+    display: flex;
+    align-items: center;
+}
+.edubin-section-5 .hero-content .hero-skill-wrap .hero-feature-item .feature-img {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+.edubin-section-5 .hero-content .hero-skill-wrap .hero-feature-item .feature-txt {
+    padding-left: 25px;
+}
+.edubin-section-5 .hero-content .hero-skill-wrap .hero-feature-item .feature-txt p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #fff;
+}
+.edubin-section-5 .hero-images .img-man {
+    position: relative;
+    z-index: 1;
+    bottom: -50px;
+}
+@media only screen and (max-width: 1199px) {
+    .edubin-section-5 .hero-content .hero-skill-wrap .hero-feature-item .feature-txt:last-child {
+        padding-left: 0;
+    }
+    .edubin-section-5 .hero-images .img-man {
+        bottom: -70px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .edubin-section-5 .hero-content .hero-skill-wrap .hero-feature-item .feature-txt {
+        padding-left: 0;
+    }
+    .edubin-section-5 .hero-images .img-man {
+        bottom: -120px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .edubin-section-5 .hero-content .hero-skill-wrap .hero-feature-item:first-child {
+        margin-bottom: 30px;
+    }
+}
+/*===============================================================
+ ##Hero Section 6
+ =================================================================*/
+
+.edubin-section-6 {
+    padding-top: 120px;
+}
+.edubin-section-6 .shape-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.edubin-section-6 .hero-content {
+    padding-right: 60px;
+    padding-bottom: 200px;
+}
+.edubin-section-6 .hero-content .hero-content-wrapper {
+    transform: rotate(10deg);
+}
+.edubin-section-6 .hero-content .hero-content-wrapper .title-1, .edubin-section-6 .hero-content .hero-content-wrapper .title-2, .edubin-section-6 .hero-content .hero-content-wrapper .title-3 {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%); */
+    -webkit-clip-path: polygon(100% -100%, 100% 100%, -100% 100%, -100% 100%);
+    clip-path: polygon(100% -100%, 100% 100%, -100% 100%, -100% 100%);
+    transform: translateY(0);
+    opacity: 1;
+    animation-name: titleAnimation;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+.edubin-section-6 .hero-content .hero-content-wrapper h2 {
+    font-size: 120px;
+    list-style: 130px;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+.edubin-section-6 .hero-content .hero-content-wrapper h2:first-child {
+    animation-delay: 0.6s;
+}
+.edubin-section-6 .hero-content .hero-content-wrapper h2:last-child {
+    animation-delay: 0.4s;
+}
+.edubin-section-6 .hero-content .hero-content-wrapper .title-1::after, .edubin-section-6 .hero-content .hero-content-wrapper .title-2::after, .edubin-section-6 .hero-content .hero-content-wrapper .title-3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    right: -35px;
+    z-index: -1;
+}
+.edubin-section-6 .hero-images {
+    position: relative;
+}
+.edubin-section-6 .hero-images .img-man {
+    position: relative;
+    bottom: -55px;
+}
+.edubin-section-6 .hero-images .shape-2 {
+    position: absolute;
+    right: -10px;
+    top: -75px;
+    -webkit-animation: up-down 5s linear infinite;
+    animation: up-down 5s linear infinite;
+}
+.edubin-section-6 .hero-images .shape-3 {
+    position: absolute;
+    left: 0;
+    -webkit-animation: up-down 5s linear infinite;
+    animation: up-down 5s linear infinite;
+    animation-delay: 2.5s;
+}
+@media only screen and (max-width: 991px) {
+    .edubin-section-6 {
+        padding-top: 100px;
+    }
+    .edubin-section-6 .hero-content {
+        padding-bottom: 170px !important;
+    }
+    .edubin-section-6 .hero-images {
+        padding: 0 200px;
+    }
+    .edubin-section-6 .hero-images .shape-2 {
+        right: 60px;
+    }
+    .edubin-section-6 .hero-images .shape-3 {
+        left: 70px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .edubin-section-6 {
+        padding-top: 90px;
+    }
+    .edubin-section-6 .hero-images {
+        padding: 0 100px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .edubin-section-6 .hero-content {
+        padding-right: 30px;
+    }
+    .edubin-section-6 .hero-images {
+        padding: 0;
+    }
+}
+/********************** ##Teacher Style 1 ************************/
+
+.edubin-single-teacher {
+    position: relative;
+}
+.edubin-single-teacher .teacher-image-wrap {
+    border-radius: 3px;
+    overflow: hidden;
+}
+.edubin-single-teacher .teacher-image-wrap .teacher-image img {
+    width: 100%;
+}
+.edubin-single-teacher .teacher-content-area {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    width: 80%;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 0;
+    height: 75px;
+    overflow: hidden;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.edubin-single-teacher .teacher-content {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 0;
+}
+.edubin-single-teacher:hover .teacher-content {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    bottom: 10px;
+}
+.edubin-single-teacher .teacher-content a {
+    display: block;
+}
+.edubin-single-teacher .teacher-content a .teacher-name {
+    color: var(--edubin-heading-color);
+    font-size: 18px;
+    font-weight: 700!important;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+.edubin-single-teacher .teacher-content .teacher-name {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.edubin-single-teacher .teacher-content a:hover .teacher-name {
+    color: var(--edubin-primary-color);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.edubin-single-teacher .teacher-content .teacher-degree {
+    display: block;
+    margin-bottom: 0;
+}
+.edubin-single-teacher .teacher-content span {
+    font-size: 15px;
+    color: #8a8a8a;
+    font-weight: 500;
+}
+.edubin-single-teacher .teacher-content .teacher-social {
+    padding-top: 5px;
+}
+.edubin-single-teacher .teacher-social a.social-link {
+    color: #07294d;
+    padding: 0 5px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.edubin-single-teacher .teacher-social a.social-link:hover {
+    color: var(--edubin-primary-color);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.edubin-single-teacher .teacher-content a {
+    display: inline-block;
+}
+.edubin-single-teacher.active-social .teacher-content {
+    bottom: -25px;
+}
+.edubin-single-teacher.active-social:hover .teacher-content-area {
+    height: 110px;
+}
+.edubin-single-teacher.active-social:hover .teacher-content {
+    bottom: 10px;
+}
+/********************** ##Teacher Style 2 ************************/
+
+.edubin-teacher-item.edubin-teacher-style-2 {
+    text-align: center;
+}
+.edubin-teacher-style-2 .teacher-img-wrap {
+    position: relative;
+    margin-bottom: 15px;
+}
+.edubin-teacher-style-2 .teacher-img-wrap>a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    background: linear-gradient(-180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .5s;
+}
+.edubin-teacher-item.edubin-teacher-style-2:hover .teacher-img-wrap>a::after {
+    visibility: visible;
+    opacity: 1;
+}
+.edubin-teacher-style-2 .teacher-img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.edubin-teacher-style-2 .teacher-img img {
+    transition: all .5s ease-in-out;
+    transform: scale(1.000001);
+}
+.edubin-teacher-style-2:hover .teacher-img img {
+    transform: scale(1.1);
+}
+.edubin-teacher-style-2 .teacher-img-wrap .teacher-social {
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 95%;
+    z-index: 1;
+}
+.edubin-teacher-style-2 .teacher-img-wrap .teacher-social .social-link {
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 100%;
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translateY(25px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.edubin-teacher-style-2 .teacher-img-wrap .teacher-social .social-link i {
+    font-size: 14px;
+    line-height: 1;
+}
+.edubin-teacher-style-2:hover .teacher-img-wrap .teacher-social .social-link {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+.edubin-teacher-style-2 .teacher-img-wrap .teacher-social .social-link:nth-child(5) {
+    margin-top: 10px;
+}
+.edubin-teacher-style-2 .teacher-content .title {
+    margin-bottom: 5px;
+}
+/*===============================================================
+ ##Program
+ =================================================================*/
+
+.edubin-programs.style-1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    height: 390px;
+}
+.edubin-programs.style-1 a {
+    height: 65px;
+    transition-property: height;
+    transition-duration: .5s;
+}
+.edubin-programs.style-1:hover a {
+    height: 40%;
+}
+.edubin-programs.style-1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    background-image: linear-gradient(-160deg, #ECECEC00 50%, #66F83E 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.edubin-programs.style-1:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+.edubin-programs.style-1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.5);
+}
+.edubin-programs.style-1 .programs-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.edubin-programs.style-1 .programs-wrapper .program-title {
+    position: relative;
+    font-size: 36px;
+    padding-bottom: 0;
+    margin-bottom: 35px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #ffffff;
+}
+.edubin-programs.style-1 .programs-wrapper .program-title.bottom-line::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #76b625;
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+    transition: all .5s;
+}
+.edubin-programs.style-1 .programs-wrapper .program-description {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0;
+    opacity: 0;
+    height: 0%;
+    transition: all .5s;
+}
+.edubin-programs.style-1:hover .programs-wrapper .program-description {
+    opacity: 1;
+    height: 100%;
+}
+/*===============================================================
+ ##Search
+ =================================================================*/
+
+.edubin-search-box-wrap {
+    font-size: 20px;
+}
+.edubin-search-box-wrap input:focus {
+    outline: none;
+}
+.edubin-search-box-wrap .btn-search {
+    background: transparent;
+    padding: 0;
+}
+.edubin-search-box-wrap svg {
+    width: 20px;
+    margin-top: 8px;
+}
+/* Search Style 01 */
+
+.edubin-search-sty-wraple-1 {
+    position: relative;
+}
+.edubin-search-sty-wraple-1 input {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 22px !important;
+    transition: all .3s ease-in-out;
+    height: 45px;
+    color: #999999;
+    font-size: 14px;
+    padding: 0 20px 0 78px !important;
+}
+.edubin-search-sty-wraple-1 input:focus {
+    width: 100%;
+    border: 1px solid var(--edubin-primary-color);
+}
+.edubin-search-sty-wraple-1 input:focus~button.btn-search {
+    background: var(--edubin-primary-color);
+    color: #fff;
+    border-radius: 100px;
+}
+.edubin-search-sty-wraple-1 input:focus~button.btn-reset {
+    left: -22px;
+}
+.edubin-search-sty-wraple-1 button {
+    transition: all .3s ease-in-out;
+    border: none;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 70px;
+    transform: translateY(-50%);
+    padding: 0;
+}
+.edubin-search-sty-wraple-1 button.btn-search {
+    font-size: 20px;
+    background: var(--edubin-primary-color);
+    border-radius: 100px 0 0 100px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+/* Search Style 03 */
+
+.edubin-search-sty-wraple-3 {
+    position: relative;
+}
+.edubin-search-sty-wraple-3 input {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    height: 45px;
+    color: #999999;
+    font-size: 14px;
+    padding: 0 20px 0 78px;
+}
+.edubin-search-sty-wraple-3 input:focus {
+    width: 100%;
+    border: 1px solid var(--edubin-primary-color);
+}
+.edubin-search-sty-wraple-3 input:focus~button {
+    width: 36px;
+}
+.edubin-search-sty-wraple-3 input:focus~button.btn-search {
+    background: var(--edubin-primary-color);
+    color: #fff;
+    border-radius: 20px;
+}
+.edubin-search-sty-wraple-3 input:focus~button.btn-reset {
+    left: -22px;
+}
+.edubin-search-sty-wraple-3 button {
+    transition: all .3s ease-in-out;
+    border: none;
+    height: 36px;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    width: 70px;
+    transform: translateY(-50%);
+    padding: 0;
+}
+.edubin-search-sty-wraple-3 button.btn-search {
+    transition: all .3s ease-in-out;
+    border: none;
+    height: 36px;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    width: 50px;
+    transform: translateY(-50%);
+    padding: 0;
+    color: var(--edubin-primary-color);
+    transition: all .3s ease-in-out;
+}
+/*===== SEARCH BOX =====*/
+
+.edubin-search-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 85%);
+    z-index: 999;
+    display: none;
+}
+.edubin-closebtn {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+.edubin-closebtn span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+}
+.edubin-closebtn span:nth-of-type(1) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 11px;
+}
+.edubin-closebtn span:nth-of-type(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px;
+}
+.edubin-search-box .edubin-search-form input {
+    width: 50%;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    background-color: #fff;
+    border: 2px solid #07294d;
+    color: #07294d;
+    padding-right: 20px;
+    border-radius: 100px!important;
+}
+.edubin-search-box .edubin-search-form button {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 80px;
+    right: 73%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    padding: 0;
+    border: 0;
+    background-color: var(--edubin-primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    line-height: 0;
+}
+@media (max-width:567px) {
+    .edubin-search-box .edubin-search-form input {
+        width: 70%;
+    }
+    .edubin-search-box .edubin-search-form button {
+        right: 77%;
+    }
+}
+/*===============================================================
+ ##Countdown
+ =================================================================*/
+
+.edubin-countdown-timer-widget .countdown-items {
+    overflow: hidden;
+}
+.edubin-countdown-timer-widget .countdown-items {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0px 20px;
+    border: 2px solid #333;
+}
+.edubin-countdown-timer-widget .countdown-items:first-child {
+    margin-right: 0;
+}
+.edubin-countdown-timer-widget .countdown-items:first-child {
+    margin-left: 0;
+}
+.edubin-countdown-timer-widget .countdown-items .ctw-digits {
+    display: block;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 35px;
+}
+.edubin-countdown-timer-widget .countdown-items .ctw-label {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+.edubin-countdown-timer-widget .finished-message {
+    text-align: center;
+}
+/* media query css */
+
+@media (max-width:493px) {
+    .edubin-countdown-timer-widget .countdown-items {
+        width: 15%;
+    }
+    .edubin-countdown-timer-widget .countdown-items .ctw-digits {
+        font-size: 26px;
+    }
+}
+/*===============================================================
+ ##CTA Addon
+ =================================================================*/
+
+.edubin-cta-1 {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.edubin-cta-1::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(-180deg, #ffffff00 38%, #000 100%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+.edubin-cta-1 .cta-content {
+    display: flex;
+    align-items: center;
+    padding: 350px 30px 45px 30px;
+}
+.edubin-cta-1 .cta-content .cta-icon {
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--edubin-primary-color);
+    color: #fff;
+    margin-left: 10px;
+}
+.edubin-cta-1 .cta-content .cta-icon svg {
+    width: 25px;
+    height: 25px;
+}
+.edubin-cta-1 .cta-content p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.edubin-cta-1 .cta-content .number {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+/*===============================================================
+ ##Custom Icon Addon
+ =================================================================*/
+
+.elementor-widget-edubin-custom-icon .icon-shape-wrap {
+    background: var(--edubin-primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 58px;
+    right: 25px;
+}
+@media (min-width: 768px) {
+    .elementor-widget-edubin-custom-icon.elementor-position-left .elementor-icon-box-wrapper, .elementor-widget-edubin-custom-icon.elementor-position-right .elementor-icon-box-wrapper {
+        display: flex
+    }
+    .elementor-widget-edubin-custom-icon.elementor-position-right .elementor-icon-box-wrapper {
+        text-align: left;
+        flex-direction: row-reverse
+    }
+    .elementor-widget-edubin-custom-icon.elementor-position-left .elementor-icon-box-wrapper {
+        text-align: right;
+        flex-direction: row
+    }
+    .elementor-widget-edubin-custom-icon.elementor-position-top .elementor-icon-box-img {
+        margin: auto
+    }
+    .elementor-widget-edubin-custom-icon.elementor-vertical-align-top .elementor-icon-box-wrapper {
+        align-items: flex-start
+    }
+    .elementor-widget-edubin-custom-icon.elementor-vertical-align-middle .elementor-icon-box-wrapper {
+        align-items: center
+    }
+    .elementor-widget-edubin-custom-icon.elementor-vertical-align-bottom .elementor-icon-box-wrapper {
+        align-items: flex-end
+    }
+}
+/*===============================================================
+ ##Delimiter addon
+ =================================================================*/
+
+.delimiter {
+    position: relative;
+}
+/*===============================================================
+ ##Contact from 7
+ =================================================================*/
+
+.edubin-form-wrapper {
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.1);
+}
+.edubin-form-wrapper .wpcf7 {
+    padding: 50px 50px 0 50px;
+}
+.edubin-form-wrapper .wpcf7-field-container {
+    padding: 40px 50px 15px 50px;
+}
+.edubin-form-wrapper .wpcf7-head-container {
+    background-color: #07294d;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.edubin-form-wrapper .wpcf7-title {
+    color: var(--edubin-primary-color);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: var(--edubin-primary-color);
+}
+.edubin-form-wrapper .wpcf7-description {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.edubin-form-wrapper input[type=date], .edubin-form-wrapper input[type=datetime], .edubin-form-wrapper input[type=datetime-local], .edubin-form-wrapper input[type=email], .edubin-form-wrapper input[type=month], .edubin-form-wrapper input[type=number], .edubin-form-wrapper input[type=password], .edubin-form-wrapper input[type=range], .edubin-form-wrapper input[type=search], .edubin-form-wrapper input[type=tel], .edubin-form-wrapper input[type=text], .edubin-form-wrapper input[type=time], .edubin-form-wrapper input[type=url], .edubin-form-wrapper input[type=week], .edubin-form-wrapper select, .edubin-form-wrapper textarea {
+    color: #8a8a8a;
+    width: 100%;
+    overflow: hidden;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.edubin-form-wrapper input[type=submit], .edubin-form-wrapper button[type=submit] {
+    display: inline-block;
+    background: var(--edubin-color-btn-bg);
+    border-color: var(--edubin-color-btn-border);
+    color: var(--edubin-color-btn-text);
+    border-radius: 3px;
+    padding: 15px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    transition: all 0.3s ease 0s;
+}
+.edubin-form-wrapper input[type=submit]:hover, .edubin-form-wrapper button[type=submit]:hover {
+    color: var( --edubin-color-btn-text-hover);
+    border-color: var( --edubin-color-btn-border-hover);
+    background-color: var( --edubin-color-btn-bg-hover);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+/*===============================================================
+ ##WPfroms Addon
+ =================================================================*/
+
+.edubin-wpforms-wrapper {
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.1);
+}
+.edubin-wpforms-wrapper .wpforms-container .wpforms-field-container {
+    padding: 40px 50px 15px 50px;
+}
+.edubin-wpforms-wrapper .wpforms-container .wpforms-head-container {
+    background-color: #07294d;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.edubin-wpforms-wrapper .wpforms-container .wpforms-head-container .wpforms-title {
+    color: #ffc600;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+.edubin-wpforms-wrapper .wpforms-container .wpforms-head-container .wpforms-description {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.edubin-wpforms-wrapper div.wpforms-container.wpforms-container-full .wpforms-form .wpforms-submit-container {
+    padding: 0 40px 15px 40px;
+    text-align: center;
+}
+.edubin-wpforms-wrapper .wpforms-form .wpforms-submit-container input[type=submit], .edubin-wpforms-wrapper .wpforms-form .wpforms-submit-container button[type=submit] {
+    background-color: #ffc600;
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid #ffc600;
+    font-size: 15px;
+    line-height: 17px!important;
+    font-family: var(--edubin-heading-font-family);
+    color: #07294d;
+    overflow: hidden;
+    border-radius: 3px;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.edubin-wpforms-wrapper .wpforms-form .wpforms-submit-container input[type=submit]:hover, .edubin-wpforms-wrapper .wpforms-form .wpforms-submit-container button[type=submit]:hover {
+    color: #ffc600;
+    border-color: #07294d;
+    background-color: #07294d;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=date], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=datetime], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=datetime-local], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=email], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=month], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=number], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=password], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=range], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=search], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=tel], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=text], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=time], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=url], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form input[type=week], .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form select, .edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form textarea {
+    color: #8a8a8a;
+    width: 100%;
+    overflow: hidden;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form textarea.wpforms-field-large {
+    height: 100px;
+    padding: 15px 30px;
+}
+.edubin-wpforms-wrapper div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 13px 0;
+}
+/*- Theme WpForms style -*/
+
+div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
+    background-color: transparent;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.5s ease;
+    min-height: 45px
+}
+div.wpforms-container-full .wpforms-form input[type=date]:focus, div.wpforms-container-full .wpforms-form input[type=datetime]:focus, div.wpforms-container-full .wpforms-form input[type=datetime-local]:focus, div.wpforms-container-full .wpforms-form input[type=email]:focus, div.wpforms-container-full .wpforms-form input[type=month]:focus, div.wpforms-container-full .wpforms-form input[type=number]:focus, div.wpforms-container-full .wpforms-form input[type=password]:focus, div.wpforms-container-full .wpforms-form input[type=range]:focus, div.wpforms-container-full .wpforms-form input[type=search]:focus, div.wpforms-container-full .wpforms-form input[type=tel]:focus, div.wpforms-container-full .wpforms-form input[type=text]:focus, div.wpforms-container-full .wpforms-form input[type=time]:focus, div.wpforms-container-full .wpforms-form input[type=url]:focus, div.wpforms-container-full .wpforms-form input[type=week]:focus, div.wpforms-container-full .wpforms-form select:focus, div.wpforms-container-full .wpforms-form textarea:focus {
+    border-color: #07294d;
+    transition: all 0.5s ease;
+}
+div.wpforms-container-full .wpforms-form input:focus, div.wpforms-container-full .wpforms-form textarea:focus, div.wpforms-container-full .wpforms-form select:focus {
+    border-color: #07294d !important;
+    transition: all 0.5s ease;
+}
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-large {
+    height: 120px;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 15px 0;
+}
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    display: inline-block;
+    margin-right: 0;
+    margin-top: 15px;
+    background-color: var(--edubin-primary-color);
+    color: #07294d;
+    padding: 15px 35px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: var(--edubin-heading-font-family);
+    border-radius: 2px;
+    border: 1px solid var(--edubin-primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+div.wpforms-container-full .wpforms-form input[type=submit]:hover, div.wpforms-container-full .wpforms-form button[type=submit]:hover, div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
+    background-color: #07294d;
+    color: #fff;
+    border: 1px solid #07294d;
+    -webkit-transition: all 0.55s ease;
+    -o-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+    text-decoration: none;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field input.wpforms-error, div.wpforms-container-full .wpforms-form .wpforms-field textarea.wpforms-error, div.wpforms-container-full .wpforms-form .wpforms-field select.wpforms-error {
+    border-color: #e0e0e0;
+}
+/********************** ##Course Category Style 2 ************************/
+
+.tpc-cat-item .single-items-1 {
+    overflow: hidden;
+}
+.tpc-cat-item .single-items-1 a {
+    display: block;
+    line-height: 90px;
+    border: 1px solid #c2c2c2;
+    position: relative;
+    padding-right: 90px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear
+}
+.tpc-cat-item .single-items-1 a .cat-item_image {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #e5f1fb;
+    border: 2px solid var(--edubin-primary-color);
+    padding: 8px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+}
+.tpc-cat-item .single-items-1 a .cat_name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--edubin-color-secondary);
+    line-height: 1.3;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear
+}
+.tpc-cat-item .single-items-1 a:hover {
+    background-color: var(--edubin-color-secondary);
+    transition: all 0.3s linear
+}
+.tpc-cat-item .single-items-1 a:hover .cat-item_image {
+    background: #ffffff;
+    border: 2px solid #fff;
+    transition: all 0.3s linear
+}
+.tpc-cat-item .single-items-1 a:hover .cat_name {
+    color: #ffffff;
+    transition: all 0.3s linear
+}
+@media only screen and (max-width:992px) {
+    .tpc-cat-item .single-items-1 a {
+        padding-right: 80px;
+    }
+    .tpc-cat-item .single-items-1 a .cat-item_image {
+        right: 15px;
+    }
+    .tpc-cat-item .single-items-1 a .cat_name {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+/********************** ##Course Category Style 1 ************************/
+
+.edubin-course-category .single-items {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.edubin-course-category.cat-hover-effect-1 .single-items:hover {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    -webkit-transform: translateY(-5px) translate3d(0, -5px, 0);
+    transform: translateY(-5px) translate3d(0, -5px, 0);
+}
+.edubin-course-category .single-items .items-image {
+    position: relative;
+}
+.edubin-course-category .single-items .items-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.edubin-course-category .single-items .items-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 41, 77, 0.6);
+    border-radius: 3px;
+}
+.edubin-course-category .single-items .items-cont {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.edubin-course-category .single-items .items-cont .course-cat {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    position: relative;
+    display: inline-block;
+}
+.edubin-course-category .single-items .items-cont .course-cat:hover {
+    color: var(--edubin-primary-color);
+}
+.edubin-course-category .single-items .items-cont .total-course {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.edubin-course-category.cat-hover-effect-2 .single-items .items-cont a .course-cat:hover {
+    color: inherit;
+}
+.edubin-course-category.cat-hover-effect-2 .single-items .items-cont>a {
+    transition: inherit;
+}
+.edubin-course-category.cat-hover-effect-2 .single-items .items-cont>a:hover {
+    color: #ffffff;
+}
+.edubin-course-category.cat-hover-effect-2 .single-items .items-cont a .course-cat::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s linear;
+    position: absolute;
+    bottom: -2px;
+}
+.edubin-course-category.cat-hover-effect-2 .single-items .items-cont a .course-cat:hover:before {
+    width: 100%;
+}
+/********************** ##Course Category Style 3 ************************/
+
+.tpc-course-category-style-3 {
+    box-sizing: border-box;
+    border: 1px solid #EBEBEB;
+    border-radius: 58px;
+    display: inline-flex;
+    align-items: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tpc-course-category-style-3:hover {
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, .07);
+}
+.tpc-course-category-style-3 a.cat-item-3 {
+    font-size: 17px;
+    line-height: 28px;
+    color: var(--edubin-heading-color);
+    display: flex;
+    align-items: center;
+    padding: 8px 20px 8px 12px;
+    transition: all 0.25s ease-out;
+}
+.tpc-course-category-style-3:hover a.cat-item-3 {
+    color: var(--edubin-primary-color);
+}
+.tpc-course-category-style-3 a.cat-item-3 img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+/********************** ##Course Category Style 4 ************************/
+
+.tpc-course-category-style-4 {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.tpc-course-category-style-4 .cat-title-wrap {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.tpc-course-category-style-4 .cat-title-wrap>h4 {
+    margin-bottom: 0;
+    color: inherit;
+    transition: inherit;
+}
+.tpc-course-category-style-4 .cat-title-wrap.edubin-slider:hover h4 {
+    color: inherit;
+}
+.tpc-category-style-4 .edubin-icon-category:hover .icon-category-title {
+    transition: all 0.3s ease 0s;
+}
+.tpc-category-style-4 .edubin-icon-category:hover .icon-category-title {
+    color: var(--edubin-primary-color);
+}
+.tpc-category-style-4 .edubin-icon-category:hover .single-category .img-wrapper img {
+    transform: rotate(-5deg);
+}
+.tpc-course-category-style-4 a.cat-title-wrap:hover {
+    color: var(--edubin-heading-color);
+}
+/*===============================================================
+ ##Course instructor
+ =================================================================*/
+
+.instructor-1 .instructor-1-single {
+    background-color: #fff;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 15px;
+}
+.instructor-1 .instructor-1-single .thum img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.instructor-1 .instructor-1-single .cont {
+    padding-right: 20px;
+}
+.instructor-1 .instructor-1-single .cont a h5 {
+    font-size: 18px;
+    color: #23252a;
+    margin-bottom: 4px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.instructor-1 .instructor-1-single .cont a:hover h5 {
+    color: var(--edubin-primary-color);
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.instructor-1 .instructor-1-single .cont p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #8a8a8a;
+    font-weight: 500;
+}
+.instructor-1 .instructor-1-single .cont span {
+    font-size: 14px;
+    color: #07294d;
+    font-weight: 500;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.instructor-1 .instructor-1-single .cont span i {
+    margin-left: 5px;
+    color: var(--edubin-primary-color);
+}
+/*===============================================================
+ ##Section Title Addon
+ =================================================================*/
+
+.edubin-section-title .section-title-txt {
+    font-size: 48px;
+    color: #23252a;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    display: inline-block;
+}
+.edubin-section-title .section-subtitle-txt {
+    color: #07294d;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+.page.type-page .entry-content p.section-subtitle-txt {
+    margin-bottom: 0;
+}
+.edubin-section-title span.edubin-title-sperator {
+    background-color: var(--edubin-primary-color);
+    display: inline-block;
+    height: 3px;
+    margin-bottom: 13px;
+    margin-top: 0px;
+    position: relative;
+    width: 42px;
+}
+.edubin-section-title.title-style-three span.edubin-title-sperator::before {
+    background-color: var(--edubin-primary-color);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    right: -13px;
+    margin-bottom: 13px;
+    margin-top: 25px;
+    position: absolute;
+    width: 50px;
+}
+.edubin-title-align-left .edubin-section-title.title-style-three span.edubin-title-sperator::before, .edubin-title-align-justify .edubin-section-title.title-style-three span.edubin-title-sperator::before {
+    right: 13px;
+}
+.edubin-section-title.edubin-subtitle-position-top {
+    display: flex;
+    flex-direction: column;
+}
+.edubin-section-title.edubin-subtitle-position-top .section-title-txt {
+    order: 2;
+}
+.edubin-section-title.edubin-subtitle-position-top .section-subtitle-txt {
+    order: 1;
+}
+.edubin-section-title.edubin-subtitle-position-top img {
+    order: 3;
+}
+.edubin-section-title.edubin-subtitle-position-top i {
+    order: 3;
+}
+.edubin-section-title img {
+    margin: auto;
+}
+.edubin-section-title.edubin-subtitle-position-top .edubin-title-sperator-sec {
+    order: 4;
+}
+.edubin-section-title.edubin-subtitle-position-top.title-style-four .edubin-title-sperator-sec {
+    order: 2;
+}
+.edubin-section-title.edubin-subtitle-position-top.title-style-four .section-title-txt {
+    order: 3;
+}
+.edubin-section-title.edubin-subtitle-position-top.title-style-four span.edubin-title-sperator {
+    margin-top: 8px;
+}
+.title-style-two .edubin-title-sperator-sec, .title-style-five .edubin-title-sperator-sec {
+    display: none;
+}
+.title-style-two .section-title-txt {
+    padding: 0 10.5%;
+    position: relative;
+}
+.title-style-two .section-title-txt::before, .title-style-two .section-title-txt::after {
+    background: #412e51 none repeat scroll 100% 0;
+    content: "";
+    height: 3px;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+}
+.title-style-two .section-title-txt::after {
+    left: 0;
+    top: 50%;
+    right: auto;
+}
+.title-style-two .section-title-txt {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.section-advancetitle-txt {
+    color: var(--edubin-primary-color);
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 28px;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: -1;
+}
+.edubin-title-sperator-sec {
+    line-height: 1;
+}
+.slider-btn-left {
+    display: inline-block;
+}
+.slider-btn-right {
+    display: inline-block;
+}
+/*===============================================================
+ ##Double Headings / Coustom Title
+ =================================================================*/
+
+.elementor-widget-custom-title-addons .tpc-double_heading {
+    position: relative;
+}
+.elementor-widget-custom-title-addons .tpc-double_heading .dbl__title-wrapper {
+    position: relative;
+    z-index: 1;
+    line-height: 0;
+}
+.elementor-widget-custom-title-addons .tpc-double_heading .dbl__title {
+    font-size: 36px;
+    line-height: 1.3334em;
+    font-weight: inherit;
+    color: var(--edubin-heading-color);
+}
+.elementor-widget-custom-title-addons .tpc-double_heading .dbl__title.dbl-title_2 {
+    color: var(--edubin-primary-color);
+}
+.elementor-widget-custom-title-addons .tpc-double_heading .dbl__subtitle {
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+.elementor-widget-custom-title-addons .tpc-double_heading .dbl__subtitle span, .elementor-widget-custom-title-addons .tpc-double_heading .dbl__subtitle span:before {
+    display: inline-block;
+    vertical-align: middle;
+}
+.elementor-widget-custom-title-addons .shape-bg>.shape__bg {
+    position: absolute;
+    content: '';
+    width: 165px;
+    height: 3px;
+    border-radius: 50px;
+    z-index: -1;
+    top: 45px;
+    right: 0;
+    background: var(--edubin-primary-color);
+}
+.elementor-widget-custom-title-addons .thumb-shape-bg>.thumb-shape__bg {
+    position: absolute;
+    width: 100%;
+    border-radius: 50px;
+    z-index: -1;
+    top: 15px;
+    right: 0;
+}
+.elementor-widget-custom-title-addons .shape-bg>.shape__svg {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 30px;
+    right: 0;
+}
+.elementor-widget-custom-title-addons .shape-bg>.shape__svg>svg {
+    max-width: 100%;
+}
+.elementor-widget-custom-title-addons .shape-bg>.shape__svg>svg>path {
+    stroke: var(--edubin-primary-color);
+}
+.elementor-widget-custom-title-addons .shape-bg.animation_active .shape__bg {
+    -webkit-animation: section-animation 4s infinite;
+    animation: section-animation 4s infinite;
+}
+.elementor-widget-custom-title-addons .thumb-shape-bg.animation_active .thumb-shape__bg {
+    -webkit-animation: section-animation 4s infinite;
+    animation: section-animation 4s infinite;
+}
+@keyframes section-animation {
+    0% {
+        width: 0;
+    }
+    15% {
+        width: 100%;
+    }
+    85% {
+        opacity: 1;
+    }
+    90% {
+        width: 100%;
+        opacity: 0;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+    }
+}
+.dbl__subtitle .subtitle-pill {
+    background: var(--edubin-primary-color);
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+/*===============================================================
+ ##Login Join addon
+ =================================================================*/
+
+.login-join .login-join_wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: inherit;
+}
+.login-join .login-join_wrapper .join_link {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #08294D;
+    font-size: 13px;
+    padding: 16px 29px;
+    border-radius: 5px;
+    line-height: 1.1;
+}
+.login-join .login-join_wrapper .logout_link {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #08294D;
+    font-size: 13px;
+    padding: 16px 29px;
+    border-radius: 5px;
+    line-height: 1.1;
+}
+/*style 2*/
+
+.login-join ul {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+.login-join ul li {
+    color: var(--edubin-content-color);
+    font-size: 15px;
+    display: inline-block;
+}
+.login-join li.top-seperator {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.login-join .login-register ul li a {
+    color: var(--edubin-content-color);
+    text-decoration: none;
+    font-size: 15px;
+    list-style: none;
+    display: inline-block;
+}
+.login-join a {
+    color: var(--edubin-content-color);
+    font-size: 15px;
+}
+.login-join .edubin-custom-user-profile {
+    display: inline-block;
+}
+.login-join .login-register.logout {
+    display: inline-block;
+}
+/* Logo*/
+
+.edubin-logotype-container h1 {
+    margin: 0;
+    font-size: 40px;
+}
+/*===============================================================
+ ##Mail Chimp plugin
+ =================================================================*/
+
+.edubin-mailchimp-form-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.edubin-mailchimp-form-wrap input {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-left: 150px;
+    margin-bottom: 0;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    background: #fff;
+}
+@media only screen and (max-width:575px) {
+    .edubin-mailchimp-form-wrap input {
+        padding: 0 20px
+    }
+}
+.edubin-mailchimp-form-wrap .btn {
+    position: absolute;
+    height: 55px;
+    background-color: var(--edubin-primary-color);
+    color: #ffffff;
+    top: 0;
+    left: 0;
+    padding: 0 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+.edubin-mailchimp-form-wrap .btn:hover {
+    background-color: var(--edubin-color-secondary);
+}
+@media only screen and (max-width:575px) {
+    .edubin-mailchimp-form-wrap .btn {
+        position: relative;
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 5px
+    }
+}
+/*===============================================================
+ ##Custom Events addon
+ =================================================================*/
+
+.edubin-custom-events {
+    align-items: center;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 40px;
+    padding: 10px;
+}
+.edubin-custom-events .thumb {
+    flex-basis: 50%;
+    position: relative;
+}
+.edubin-custom-events .thumb a img {
+    width: 100%;
+}
+.edubin-custom-events .content {
+    flex-basis: 50%;
+    padding-right: 27px;
+}
+.edubin-custom-events .thumb .event-date {
+    background: #141414 none repeat scroll 100% 0;
+    color: #fff;
+    padding: 8px 0;
+    position: absolute;
+    left: -13px;
+    text-align: center;
+    top: 0;
+    width: 60px;
+}
+.edubin-custom-events .thumb .event-date span {
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+.edubin-custom-events .content h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.edubin-custom-events .content ul.event-time {
+    display: flex;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.edubin-custom-events .content ul.event-time li {
+    color: #909090;
+    font-size: 14px;
+}
+.edubin-custom-events .content ul.event-time li i {
+    color: #56a4b1;
+    padding-left: 10px;
+}
+.edubin-custom-events .content p {
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.edubin-custom-events .content .event-btn a {
+    border-bottom: 1px solid #727272;
+    color: #727272;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out 0s;
+}
+.edubin-custom-events .content ul.event-time li+li {
+    margin-right: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.edubin-custom-events .content ul.event-time li+li::before {
+    background: #9f9f9f none repeat scroll 100% 0;
+    content: "";
+    height: 15px;
+    right: 0;
+    position: absolute;
+    top: 28%;
+    width: 2px;
+}
+/*===============================================================
+ ##Video PopUp addon
+ =================================================================*/
+
+.YouTubePopUp-Wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    right: 0;
+    z-index: 9999999999999;
+}
+.YouTubePopUp-animation {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: YouTubePopUp;
+    animation-name: YouTubePopUp;
+}
+@-webkit-keyframes YouTubePopUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes YouTubePopUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body.logged-in .YouTubePopUp-Wrap {
+    top: 32px;
+    z-index: 99998;
+}
+.YouTubePopUp-Content {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+.YouTubePopUp-Content iframe {
+    max-width: 100% !important;
+    width: 100% !important;
+    display: block !important;
+    height: 680px !important;
+    border: none !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.YouTubePopUp-Hide {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: YouTubePopUpHide;
+}
+@-webkit-keyframes YouTubePopUpHide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes YouTubePopUpHide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.YouTubePopUp-Close {
+    position: absolute;
+    top: 52px;
+    cursor: pointer;
+    left: 0px;
+    margin: auto 0;
+    width: 24px;
+    height: 24px;
+    background: url(../images/close.png) no-repeat;
+    background-size: 24px 24px;
+    display: inline-block;
+}
+.YouTubePopUp-Close:hover {
+    opacity: 0.5;
+}
+@media (max-width:1200px) {
+    .YouTubePopUp-Content {
+        max-width: 950px;
+    }
+    .YouTubePopUp-Content iframe {
+        height: 500px !important;
+    }
+}
+@media (max-width:992px) {
+    .YouTubePopUp-Content {
+        max-width: 750px;
+    }
+    .YouTubePopUp-Content iframe {
+        height: 400px !important;
+    }
+}
+@media (max-width:768px) {
+    .YouTubePopUp-Content {
+        max-width: 500px;
+    }
+    .YouTubePopUp-Content iframe {
+        height: 362px !important;
+    }
+}
+@media (max-width:600px) {
+    .YouTubePopUp-Content {
+        max-width: 95%;
+    }
+    .YouTubePopUp-Content iframe {
+        height: 320px !important;
+    }
+    .YouTubePopUp-Close {
+        bottom: 362px;
+    }
+}
+@media (max-width:480px) {
+    .YouTubePopUp-Content {
+        max-width: 95%;
+    }
+    .YouTubePopUp-Content iframe {
+        height: 220px !important;
+    }
+    .YouTubePopUp-Close {
+        bottom: 262px;
+    }
+}
+.edubin-video-popup-wrapper {
+    position: relative;
+}
+/* ====== Video Popup Style 1 ========= */
+
+.edubin-video-popup-wrapper .video i {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 24px;
+    background-color: var(--edubin-primary-color);
+    color: #07294d;
+    border-radius: 50%;
+}
+/* ====== Style 2  play icon with tex ========= */
+
+.edubin-video-popup-wrapper a.play-icon-text {
+    color: #ecb101;
+}
+/* ====== Style 3 ripple effect ========= */
+
+.edubin-video-popup-wrapper .play-btn {
+    width: 82px;
+    height: 82px;
+    background: radial-gradient(var(--edubin-primary-color) 60%, var(--edubin-primary-color) 62%);
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+/* ====== triangle ========= */
+
+.edubin-video-popup-wrapper .play-btn::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    -webkit-transform: translateX(40%) translateY(-50%);
+    transform: translateX(40%) translateY(-50%);
+    transform-origin: center center;
+    width: 0;
+    height: 0;
+    margin-right: -5px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 22px solid #009688;
+    z-index: 1;
+    -webkit-transition: all 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+/* ====== pulse wave ========= */
+
+.edubin-video-popup-wrapper .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate1 3s;
+    animation: pulsate1 3s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid var(--edubin-primary-color);
+    top: -25%;
+    right: -25%;
+    background: var(--edubin-primary-color);
+}
+@-webkit-keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px var(--edubin-primary-color), 0px 0px 25px 10px var(--edubin-primary-color);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+    }
+}
+@keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px var(--edubin-primary-color), 0px 0px 25px 10px var(--edubin-primary-color);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+    }
+}
+/*====== Ripple effect 4 =====*/
+
+.edubin-video-popup-wrapper .video-popup-4 {
+    position: relative;
+}
+.edubin-video-popup-wrapper .video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    border-radius: 50%;
+    padding: 18px 28px 18px 20px;
+}
+.edubin-video-popup-wrapper .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    right: 50%;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fdbd00;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+.edubin-video-popup-wrapper .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fdbd00;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+.edubin-video-popup-wrapper .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.edubin-video-popup-wrapper .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-right: 32px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+@keyframes pulse-border {
+    0% {
+        transform: translateX(50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+/*====== Style 5 transform effect =====*/
+
+.edubin-video-popup-wrapper .video-popup-5 {
+    position: relative;
+}
+@keyframes spin {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+.edubin-video-popup-wrapper .stroke-dotted {
+    opacity: 0;
+    stroke-dasharray: 4, 5;
+    stroke-width: 1px;
+    transform-origin: 50% 50%;
+    animation: spin 4s infinite linear;
+    transition: opacity 1s ease, stroke-width 1s ease;
+}
+.edubin-video-popup-wrapper .stroke-solid {
+    stroke-dashoffset: 0;
+    stroke-dashArray: 300;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 1s ease, opacity 1s ease;
+}
+.edubin-video-popup-wrapper .icon {
+    transform-origin: 50% 50%;
+    transition: transform 200ms ease-out;
+}
+.edubin-video-popup-wrapper #play:hover .stroke-dotted {
+    stroke-width: 4px;
+    opacity: 1;
+}
+.edubin-video-popup-wrapper #play:hover .stroke-solid {
+    opacity: 0;
+    stroke-dashoffset: 300;
+}
+.edubin-video-popup-wrapper #play:hover .icon {
+    transform: scale(1.05);
+}
+.edubin-video-popup-wrapper #play {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+}
+/*====== Video popup round =====*/
+
+.edubin-video-popup-round {
+    position: relative;
+    border: 3px solid #ecb101;
+}
+.edubin-video-popup-round img {
+    display: block;
+    border-radius: 6px;
+    position: relative;
+}
+.edubin-video-popup-round a.icon-video {
+    position: absolute;
+    border-radius: 100%;
+    border: 7px solid #dcdcdc;
+    width: 75px;
+    height: 75px;
+    background: #FFF;
+    color: #ecb101;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 12;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edubin-video-popup-round a.icon-video:hover {
+    background: #ecb101;
+    color: #fff !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.edubin-video-popup-round:hover:after {
+    background-color: #ecb101cc;
+}
+.edubin-video-popup-round:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    content: "";
+    transition: .4s;
+    border-radius: 6px;
+}
+/*====== Video popup right =====*/
+
+.edubin-video-popup {
+    position: relative;
+    margin-top: 15px;
+}
+.edubin-video-popup img {
+    display: block;
+    border-radius: 6px;
+    position: relative;
+}
+.edubin-video-popup::before {
+    content: '';
+    border: 20px solid #ecb101;
+    background: none;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.edubin-video-popup a.icon-video {
+    position: absolute;
+    border-radius: 100%;
+    border: 7px solid #dcdcdc;
+    width: 75px;
+    height: 75px;
+    background: #FFF;
+    color: #ecb101;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 12;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edubin-video-popup:hover:after {
+    background-color: #ecb101cc;
+}
+.edubin-video-popup:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    content: "";
+    transition: .4s;
+    border-radius: 6px;
+}
+.edubin-video-popup a.icon-video:hover {
+    background: #ecb101;
+    color: #fff !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+/* ======Video left ======*/
+
+.edubin-video-popup-left {
+    position: relative;
+    margin-top: 25px;
+}
+.edubin-video-popup-left img {
+    display: block;
+    border-radius: 6px;
+    position: relative;
+}
+.edubin-video-popup-left::before {
+    content: '';
+    border: 30px solid #ecb101;
+    background: none;
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.edubin-video-popup-left::before {
+    content: '';
+    border: 30px solid #ecb101;
+    background: none;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.edubin-video-popup-left a.icon-video {
+    position: absolute;
+    border-radius: 100%;
+    border: 7px solid #dcdcdc;
+    width: 75px;
+    height: 75px;
+    background: #FFF;
+    color: #ecb101;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 12;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edubin-video-popup-left a.icon-video:hover {
+    background: #ecb101;
+    color: #fff !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.edubin-video-popup-left:hover:after {
+    background-color: #ecb101cc;
+}
+.edubin-video-popup-left:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    content: "";
+    transition: .4s;
+    border-radius: 6px;
+}
+/*===============================================================
+ ##Counter addon
+ =================================================================*/
+
+.edubin-counter .edubin-counter-number-wrapper-no {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--edubin-heading-color);
+}
+/*flex-counter*/
+
+.edubin-counter.counter-style-1.inline-counter {
+    display: flex;
+    align-items: center;
+}
+/* Counter 2 */
+
+.edubin-counter.counter-style-2 .counter-wrapper {
+    display: flex;
+}
+.edubin-counter.counter-style-2 .counter-wrapper .counter-icon {
+    flex-shrink: 0;
+    margin-left: 25px;
+}
+.edubin-counter.counter-style-2 .counter-wrapper .counter-content .edubin-counter-number-wrapper-no {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 700;
+    color: var(--edubin-heading-color);
+}
+.edubin-counter.counter-style-2 .counter-wrapper .counter-content .edubin-counter-title {
+    font-size: 18px;
+    color: var(--edubin-heading-color);
+    line-height: 36px;
+}
+.edubin-counter.counter-style-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edubin-counter.counter-style-3 .edubin-counter-number-wrapper-no {
+    margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+    .edubin-counter.counter-style-3 {
+        transform: none !important;
+    }
+}
+/*===============================================================
+ ##Testimonial addon
+ =================================================================*/
+
+.edubin-pagination .swiper-wrapper {
+    padding-bottom: 40px;
+}
+.edubin-navigation .testi-button-next, .edubin-navigation .testi-button-prev {
+    position: absolute;
+    background: transparent;
+    transform: translateY(-50%);
+    padding: 0;
+    top: 50%;
+    color: #ffffff;
+    border: 2px solid #ec5251;
+    background: #ec5251;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 5px;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tpc-testimonial_wrapper:hover.edubin-navigation .testi-button-next {
+    opacity: 1;
+    visibility: visible;
+    left: 35px;
+}
+.tpc-testimonial_wrapper:hover.edubin-navigation .testi-button-prev {
+    opacity: 1;
+    visibility: visible;
+    right: 35px;
+}
+.edubin-navigation .testi-button-next {
+    left: 10px;
+    ;
+}
+.edubin-navigation .testi-button-prev {
+    right: 10px;
+}
+.edubin-navigation .testi-button-next>i, .edubin-navigation .testi-button-prev>i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+/********************** ##Testimonial Style 1 ************************/
+
+.edubin-testi-1 .edubin-testi-single {
+    position: relative;
+    padding-top: 50px;
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-thum {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-thum img {
+    border-radius: 3px;
+    width: 92px;
+    height: 92px;
+    object-fit: cover;
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-thum .quote {
+    position: absolute;
+    left: -22px;
+    top: -22px;
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-thum .quote i {
+    width: 45px;
+    height: 45px;
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    background-color: var(--edubin-primary-color);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-cont {
+    padding-right: 140px;
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-cont p {
+    color: #fff;
+    padding-bottom: 5px;
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-cont .name {
+    color: #fff;
+    margin: 0;
+    padding: 0 0 2px 30px;
+    font-size: 18px;
+    font-weight: 700!important;
+    margin: 0px;
+}
+.edubin-testi-1 .edubin-testi-single .testimonial-cont .degree {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.edubin-testi-1 .slick-list {
+    padding-top: 35px;
+}
+@media (max-width: 767.98px) {
+    .edubin-testi-1 .edubin-testi-single .testimonial-thum {
+        position: relative;
+        right: 0;
+        top: 0;
+        -webkit-transform: translateY(-9%);
+        transform: translateY(-9%);
+    }
+    .edubin-testi-1 .edubin-testi-single .testimonial-cont {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+/********************** ##Testimonial Style 2 ************************/
+
+.edubin-testi-2-area {
+    background-color: #07294d;
+    padding: 60px;
+    border-radius: 3px;
+    position: relative;
+}
+.edubin-testi-2-area .testi-heading .heading {
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 60px;
+    padding-top: 0;
+    margin: 0;
+}
+.edubin-testi-2-area .edubin-testi-bg-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.edubin-testi-2-area .edubin-testi-bg-image img {
+    float: left;
+}
+.edubin-testi-2 .testi-single {
+    position: relative;
+    z-index: 5;
+}
+.edubin-testi-2 .testi-single img {
+    padding-bottom: 20px;
+    margin-right: 0;
+    max-width: 80px;
+}
+.edubin-testi-2 .testi-single .content {
+    color: #fff;
+    padding-bottom: 20px;
+    padding-left: 135px;
+    margin-bottom: 20px;
+}
+.edubin-testi-2 .testi-single .name {
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+    font-weight: 700!important;
+    margin-bottom: 5px;
+}
+.edubin-testi-2 .testi-single .degree {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.edubin-testi-3 .testi-heading {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.edubin-testi-3 .testimonial-cont {
+    color: #fff;
+    padding: 40px;
+    margin: 0 0 35px 0px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+/* .edubin-testi-single.slick-slide>div:nth-last-child {
+    margin-right: 0;
+} */
+
+.edubin-testi-3 .testimonial-cont p {
+    margin-bottom: 0;
+}
+.edubin-testi-3 .testimonial-cont:after {
+    content: '';
+    border: 15px solid transparent;
+    position: absolute;
+    right: 40px;
+    bottom: -30px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgba(255, 255, 255, 0.1);
+}
+.edubin-testi-3 .testimonial-thum {
+    float: right;
+    padding-right: 20px;
+}
+.edubin-testi-3 .testimonal-image img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.edubin-testi-3 .testimonal-image {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    float: right;
+    margin-left: 25px;
+}
+.edubin-testi-3 .testi-name-degree {
+    float: right;
+    margin-top: 12px;
+}
+.edubin-testi-3 .name {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.edubin-testi-3 .degree {
+    color: #ddd;
+    float: right;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+/********************** ##Testimonial Style 4 ************************/
+
+.edubin-testi-4 {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.edubin-testi-4 .edubin-testi-single {
+    margin-bottom: 10px;
+}
+.edubin-testi-4 .edubin-testi-single {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.27);
+    padding: 50px
+}
+.edubin-testi-4 .testi-icon-wrap {
+    margin-bottom: 10px;
+}
+.edubin-testi-4 .edubin-testi-single .testi-icon-wrap span{
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    background-color: var(--edubin-primary-color);
+}
+.edubin-testi-4 .edubin-testi-single .testi-icon-wrap span i{
+    color: #ffffff;
+}
+.edubin-testi-4 .testi-thum-degree-wrap {
+    display: flex;
+    align-items: center;
+}
+.edubin-testi-4 .testi-img {
+    float: right;
+    display: inline-block;
+}
+.edubin-testi-4 .testi-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin: 0;
+}
+.edubin-testi-4 .testi-name-degree {
+    display: inline-block;
+    float: right;
+    margin-right: 18px;
+}
+.edubin-testi-4 .name {
+    margin-bottom: 0;
+    color: #29303b
+}
+.edubin-testi-4 .degree {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.edubin-testi-4 .testi-content p {
+    color: #29303b;
+}
+
+.edubin-testi-6 .edubin-testi-single.layout-6 {
+    display: flex !important;
+    align-items: center;
+}
+/********************** ##Testimonial Style 5 ************************/
+
+.edubin-testi-6 .edubin-testi-single .testimonial-thum {
+    position: relative;
+    padding: 65px;
+    padding-right: 0;
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-thum .testimonial-shape::before {
+    content: "";
+    background: var(--edubin-primary-color);
+    width: 200px;
+    height: 415px;
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    overflow: hidden;
+    z-index: -1;
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-cont {
+    flex: 1;
+    padding-right: 40px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .edubin-testi-6 .edubin-testi-single .testimonial-cont {
+        padding-right: 20px;
+    }
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-cont i {
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    text-align: center;
+    background: #ff4612;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #ffffff;
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-cont p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 25px;
+    color: var(--edubin-content-color);
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-cont .testi-name-degree {
+    margin-top: 35px;
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-cont .degree {
+    margin-top: 5px;
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-cont .testi-name-degree .name {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    display: block;
+    color: var(--edubin-content-color);
+    margin-bottom: 0;
+}
+.edubin-testi-6 .edubin-testi-single .testimonial-cont .testi-name-degree .degree {
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    color: var(--edubin-content-color);
+}
+@media only screen and (max-width: 767px) {
+    .edubin-testi-6 .edubin-testi-single {
+        flex-direction: column;
+    }
+    .edubin-testi-6 .edubin-testi-single .testimonial-thum {
+        padding: 0px;
+    }
+    .edubin-testi-6 .edubin-testi-single .testimonial-thum .testimonial-shape::before {
+        display: none;
+    }
+    .edubin-testi-6 .edubin-testi-single .testimonial-cont {
+        padding-right: 0;
+        margin-top: 50px;
+    }
+}
+/********************** ##Testimonial Style 6 ************************/
+
+.edubin-testi-single.layout-7 {
+    padding: 80px 0;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background: #fff;
+    border-radius: 15px;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-thum {
+    position: relative;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-thum img {
+    object-fit: cover;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont {
+    position: relative;
+    flex: 1;
+    padding-right: 71px;
+    z-index: 2;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont .testi-heading {
+    margin-bottom: 0;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-wrapper .testimonial-cont .quote-bg {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: -1;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-wrapper .testimonial-cont .quote-bg i {
+    font-size: 190px;
+    line-height: 0;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont svg path{
+    fill: var(--edubin-primary-color);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .edubin-testi-7 .edubin-testi-single .testimonial-cont {
+        padding-right: 20px;
+    }
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 25px;
+    color: var(--edubin-content-color);
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont .testi-name-degree {
+    margin-top: 35px;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont .degree {
+    margin-top: 5px;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont .testi-name-degree .name {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    display: block;
+    color: var(--edubin-content-color);
+    margin-bottom: 0;
+}
+.edubin-testi-7 .edubin-testi-single .testimonial-cont .testi-name-degree .degree {
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    color: var(--edubin-content-color);
+}
+@media only screen and (min-width: 1426px) and (max-width: 1570px) {
+    .edubin-testi-7 .edubin-testi-single .testimonial-cont {
+        padding-right: 30px;
+    }
+    .edubin-testi-7 .edubin-testi-single .testimonial-wrapper {
+        padding: 25px;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1105px) {
+    .edubin-testi-7 .edubin-testi-single .testimonial-cont {
+        padding-right: 30px;
+    }
+    .edubin-testi-7 .edubin-testi-single .testimonial-wrapper {
+        padding: 25px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .edubin-testi-7 .edubin-testi-single {
+        flex-direction: column;
+    }
+    .edubin-testi-7 .edubin-testi-single .testimonial-thum {
+        padding: 0px;
+    }
+    .edubin-testi-7 .edubin-testi-single .testimonial-thum .testimonial-shape::before {
+        display: none;
+    }
+    .edubin-testi-7 .edubin-testi-single .testimonial-cont {
+        padding-right: 20px;
+        margin-top: 50px;
+    }
+    .edubin-testi-7 .edubin-testi-single .testimonial-wrapper {
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .edubin-testi-7 .edubin-testi-single .testimonial-wrapper {
+        display: block;
+        padding: 30px;
+        background: none !important;
+    }
+    .edubin-testi-7 .edubin-testi-single .testimonial-cont {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+}
+/********************** ##Testimonial Style 7 ************************/
+
+.edubin-testi-single.layout-8 .testimonial-wrapper {
+    position: relative;
+    background-color: #fff9eb;
+    margin: 10px 80px;
+    width: 470px;
+    border-radius: 30px 30px 30px 30px;
+}
+.edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-thum {
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    transform: translateY(-65%);
+    z-index: 3;
+}
+.edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-thum img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+.edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-cont {
+    padding: 50px 110px 40px;
+    padding-left: 40px;
+}
+.edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-cont .quote-icon {
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: var(--edubin-primary-color);
+}
+
+.edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-cont p {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-cont .testi-name-degree .name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .edubin-testi-single.layout-8 .testimonial-wrapper {
+        margin: 10px 65px;
+        width: 390px;
+    }
+    .edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-cont {
+        padding: 40px 100px 40px;
+        padding-left: 40px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .edubin-testi-single.layout-8 .testimonial-wrapper {
+        padding-top: 40px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-thum {
+        position: relative;
+        right: unset;
+        top: unset;
+        transform: translateY(0);
+        text-align: center;
+    }
+    .edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-cont {
+        padding: 60px 40px;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .edubin-testi-single.layout-8 .testimonial-wrapper .testimonial-cont {
+        padding: 60px 20px;
+    }
+}
+/********************** ##Testimonial Style 8 ************************/
+
+.edubin-testi-9 .testi-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.edubin-testi-9 .name {
+    margin-bottom: 0;
+    color: #29303b
+}
+.edubin-testi-9 .degree {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.edubin-testi-9 .testi-content p {
+    color: #29303b;
+}
+.edubin-testi-9 .swiper-slide {
+    padding: 0 15px;
+    margin-top: 10px;
+}
+/*===============================================================
+ ##Category Carousel addon
+ =================================================================*/
+
+/********************** ##Category Carousel addon 1 ************************/
+
+.edubin-category-style-1 .swiper-slide .edubin-icon-category .single-category {
+    padding: 20px 8px;
+    margin: 0;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+.edubin-category-style-1 .swiper-slide:nth-child(6n+6) .edubin-icon-category .single-category {
+    background: #7044b3;
+}
+.edubin-category-style-1 .swiper-slide:nth-child(6n+5) .edubin-icon-category .single-category {
+    background: #F6316F;
+}
+.edubin-category-style-1 .swiper-slide:nth-child(6n+4) .edubin-icon-category .single-category {
+    background: #ea9c0b;
+}
+.edubin-category-style-1 .swiper-slide:nth-child(6n+3) .edubin-icon-category .single-category {
+    background: #4886FF;
+}
+.edubin-category-style-1 .swiper-slide:nth-child(6n+2) .edubin-icon-category .single-category {
+    background: #FF6F6F;
+}
+.edubin-category-style-1 .swiper-slide:nth-child(6n+1) .edubin-icon-category .single-category {
+    background: #B5D56A;
+}
+.edubin-category-style-1 .edubin-icon-category .single-category {
+    padding: 20px 8px;
+    margin: 0 15px;
+    border-radius: 5px;
+    display: inline-block;
+    background: #FF6F6F;
+    float: right;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 30px;
+}
+@media (max-width:992px) {
+    .edubin-category-style-1 .edubin-icon-category .single-category {
+        width: 100%;
+    }
+}
+.edubin-category-style-1 .edubin-icon-category:nth-child(4n+2) .edubin-icon-category .single-category, .edubin-category-style-4 .edubin-icon-category:nth-child(4n+2) .edubin-icon-category .single-category {
+    background: #4886ff;
+}
+.edubin-category-style-1 .edubin-icon-category:nth-child(4n+3) .edubin-icon-category .single-category, .edubin-category-style-4 .edubin-icon-category:nth-child(4n+3) .edubin-icon-category .single-category {
+    background: #009688;
+}
+.edubin-category-style-1 .edubin-icon-category:nth-child(4n+4) .edubin-icon-category .single-category, .edubin-category-style-4 .edubin-icon-category:nth-child(4n+4) .edubin-icon-category .single-category {
+    background: #b5d56a;
+}
+.edubin-category-style-1 .edubin-icon-category .single-category .icon-category-title {
+    font-family: var(--edubin-font-secondary);
+    color: #fff;
+    font-size: 18px;
+    padding-top: 15px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+.edubin-category-style-1 .edubin-icon-category .single-category .icon-category-title:hover {
+    color: #eee;
+    transition: 0.3s ease-in-out;
+}
+.tpc-category-carousel-wrapper .cat-next.swiper-button-disabled, .tpc-category-carousel-wrapper .cat-prev.swiper-button-disabled {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+}
+.tpc-category-carousel-wrapper .cat-next, .tpc-category-carousel-wrapper .cat-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: #557495;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border: 0 none;
+    display: flex;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.tpc-category-carousel-wrapper .cat-next>i, .tpc-category-carousel-wrapper .cat-prev>i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+.tpc-category-carousel-wrapper .cat-next:hover, .tpc-category-carousel-wrapper .cat-prev:hover {
+    background: var(--edubin-primary-color);
+    color: #07294d;
+}
+.tpc-category-carousel-wrapper .cat-next {
+    left: -50px;
+}
+.tpc-category-carousel-wrapper .cat-prev {
+    right: -50px;
+}
+/********************** ##Category Carousel addon 2 ************************/
+
+.edubin-category-style-2 .swiper-slide .edubin-icon-category .single-category {
+    /* margin: 0 15px; */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: block;
+    background: #fff;
+}
+.edubin-category-style-2 .edubin-icon-category .single-category {
+    /* margin: 0 15px; */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 30px;
+}
+.edubin-category-style-2 .edubin-icon-category .single-category .icon-category-title {
+    color: var(--edubin-heading-color);
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+.edubin-category-style-2 .edubin-icon-category .single-category .icon-category-title:hover {
+    color: var(--edubin-primary-color);
+    transition: 0.3s ease-in-out;
+}
+/********************** ##Category Carousel addon 3 ************************/
+
+.edubin-category-style-3 .edubin-icon-category .single-category {
+    padding: 30px;
+    border-radius: 15px;
+    display: block;
+    background: #EFF7FF;
+}
+.edubin-category-style-3 .edubin-icon-category .single-category .img-wrapper {
+    border-radius: 100%;
+    height: 110px;
+    width: 110px;
+    border: 5px solid #000;
+    margin: 0 auto;
+}
+.edubin-category-style-3 .edubin-icon-category .single-category .img-wrapper img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.edubin-category-style-3 .edubin-icon-category .single-category .icon-category-title {
+    color: var(--edubin-heading-color);
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+.edubin-category-style-3 .edubin-icon-category .single-category:hover .icon-category-title {
+    color: var(--edubin-primary-color);
+    transition: 0.3s ease-in-out;
+}
+/********************** ##Category Carousel addon 4 ************************/
+
+.edubin-category-style-4 .edubin-icon-category .single-category {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+.icon-category-title {
+    margin-bottom: 0;
+}
+/********************** ##Category Carousel addon 5 ************************/
+
+.tpc-category-carousel-wrapper.edubin-category-style-5 .img-wrapper {
+    height: 90px;
+    width: 90px;
+    background: #f5f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+/* ======  Edubin slider addon ====== */
+
+.edubin-advance-slider-active .swiper-wrapper .swiper-slide {
+    padding: 0;
+}
+.edubin-slider {
+    position: relative;
+}
+.edubin-slider .slide {
+    position: relative;
+    padding: 130px 0px 240px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.edubin-slider .edubin-slider-background-overlay {
+    position: absolute;
+    content: '';
+    background: rgba(8, 41, 77, 0.53);
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+.edubin-slider .content-box {
+    position: relative;
+    width: 100%;
+}
+.edubin-slider .content-box .slider-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 0;
+    margin-bottom: 25px;
+    opacity: 0;
+    transition: all 1000ms ease;
+}
+.edubin-slider .content-box .slider-title.anim-to-right, .edubin-slider .content-box .edubin-slider-content.anim-to-right, .edubin-slider .content-box .button-box.anim-to-right, .edubin-slider .content-box .edubin-slider-subtitle.anim-to-right {
+    transform: translateX(20px);
+}
+.edubin-slider .content-box .slider-title.anim-to-left, .edubin-slider .content-box .edubin-slider-content.anim-to-left, .edubin-slider .content-box .button-box.anim-to-left, .edubin-slider .content-box .edubin-slider-subtitle.anim-to-left {
+    transform: translateX(-20px);
+}
+.edubin-slider .content-box .slider-title.anim-to-top, .edubin-slider .content-box .edubin-slider-content.anim-to-top, .edubin-slider .content-box .button-box.anim-to-top, .edubin-slider .content-box .edubin-slider-subtitle.anim-to-top {
+    transform: translateY(20px);
+}
+.edubin-slider .content-box .slider-title.anim-to-bottom, .edubin-slider .content-box .edubin-slider-content.anim-to-bottom, .edubin-slider .content-box .button-box.anim-to-bottom, .edubin-slider .content-box .edubin-slider-subtitle.anim-to-bottom {
+    transform: translateY(-20px);
+}
+.elementor-widget-edubin-slider-addons .edubin-slider .content-box .slider-title {
+    font-size: 60px;
+}
+.edubin-slider .swiper-slide-active .slider-title {
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+.edubin-slider .content-box .edubin-slider-subtitle {
+    color: #fff;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: all 700ms ease;
+}
+.edubin-slider .swiper-slide-active .edubin-slider-subtitle {
+    opacity: 1;
+    transition-delay: 700ms;
+}
+.edubin-slider .content-box .edubin-slider-content {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: all 1700ms ease;
+}
+.edubin-slider .swiper-slide-active .edubin-slider-content {
+    opacity: 1;
+    transition-delay: 1700ms;
+}
+.edubin-slider .content-box .button-box {
+    position: relative;
+    display: block;
+    opacity: 0;
+    transition: all 2200ms ease;
+}
+.edubin-slider .swiper-slide-active .button-box {
+    opacity: 1;
+    transition-delay: 2200ms;
+}
+.edubin-slider .swiper-slide-active .slider-title.anim-to-right, .edubin-slider .swiper-slide-active .slider-title.anim-to-left, .edubin-slider .swiper-slide-active .edubin-slider-content.anim-to-right, .edubin-slider .swiper-slide-active .edubin-slider-content.anim-to-left, .edubin-slider .swiper-slide-active .button-box.anim-to-right, .edubin-slider .swiper-slide-active .button-box.anim-to-left, .edubin-slider .swiper-slide-active .edubin-slider-subtitle.anim-to-right, .edubin-slider .swiper-slide-active .edubin-slider-subtitle.anim-to-left {
+    transform: translateX(0);
+}
+.edubin-slider .swiper-slide-active .slider-title.anim-to-top, .edubin-slider .swiper-slide-active .slider-title.anim-to-bottom, .edubin-slider .swiper-slide-active .edubin-slider-content.anim-to-top, .edubin-slider .swiper-slide-active .edubin-slider-content.anim-to-bottom, .edubin-slider .swiper-slide-active .button-box.anim-to-top, .edubin-slider .swiper-slide-active .button-box.anim-to-bottom, .edubin-slider .swiper-slide-active .edubin-slider-subtitle.anim-to-top, .edubin-slider .swiper-slide-active .edubin-slider-subtitle.anim-to-bottom {
+    transform: translateY(0);
+}
+.edubin-slider .edubin-slider-btn .edubin-btn {
+    margin: 7px;
+}
+.edubin-slider .edubin-slider-btn div:first-child .edubin-btn {
+    margin-right: 0px;
+}
+.edubin-slider .edubin-slider-btn .edubin-btn.left-btn {
+    background: var(--edubin-primary-color);
+    border: 2px solid var(--edubin-primary-color);
+    color: var(--edubin-heading-color);
+}
+.edubin-slider .edubin-slider-btn .edubin-btn.left-btn:hover {
+    background: var(--edubin-heading-color);
+    border: 2px solid var(--edubin-heading-color);
+    color: #fff;
+}
+.edubin-slider .edubin-slider-btn .edubin-btn.right-btn {
+    border: 2px solid #fff;
+    color: var(--edubin-heading-color);
+    background: #fff;
+}
+.edubin-slider .edubin-slider-btn .edubin-btn.right-btn:hover {
+    background: #07294d;
+    border: 2px solid #07294d;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+}
+/* nav */
+
+.edubin-slider .slider-next.swiper-button-disabled, .edubin-slider .slider-prev.swiper-button-disabled {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+}
+.edubin-slider .slider-next, .edubin-slider .slider-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 16px;
+    color: #fff;
+    height: 48px;
+    width: 48px;
+    border: 2px solid #ffffff;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0;
+    position: absolute;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.edubin-slider .slider-next>i, .edubin-slider .slider-prev>i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+.edubin-slider .slider-next {
+    left: 10px;
+    ;
+}
+.edubin-slider .slider-prev {
+    right: 10px;
+}
+.edubin-slider .slider-next:hover, .edubin-slider .slider-prev:hover {
+    color: #192d66;
+    border-color: var(--edubin-primary-color);
+    background-color: var(--edubin-primary-color);
+}
+.edubin-slider:hover .slider-next {
+    opacity: 1;
+    visibility: visible;
+    left: 35px;
+}
+.edubin-slider:hover .slider-prev {
+    opacity: 1;
+    visibility: visible;
+    right: 35px;
+}
+@media (max-width:575.98px) {
+    .edubin-slider .slide {
+        padding: 50px 0px 50px 0px;
+    }
+    .edubin-slider .content-box .slider-title {
+        font-size: 40px;
+    }
+    .edubin-slider .edubin-slider-btn .rep-btn {
+        padding: 10px 20px;
+    }
+    .edubin-slider .slider-next, .edubin-slider .slider-prev {
+        display: none;
+    }
+}
+:root {
+    --edubin-shape-top-1: 8%;
+    --edubin-shape-left-1: 10%;
+    --edubin-shape-top-2: 63%;
+    --edubin-shape-left-2: 34%;
+    --edubin-shape-top-3: -30%;
+    --edubin-shape-right-3: 7%;
+    --edubin-shape-top-4: -13%;
+    --edubin-shape-right-4: 7%;
+}
+@media (max-width:1800px) {
+    :root {
+        --edubin-shape-top-1: 10%;
+        --edubin-shape-left-1: 5%;
+    }
+}
+@media (max-width:1550px) {
+    :root {
+        --edubin-shape-top-1: -3%;
+        --edubin-shape-left-1: -3%;
+    }
+}
+@media (max-width:992px) {
+    :root {
+        --edubin-shape-top-1: 22%;
+        --edubin-shape-left-1: -26%;
+        --edubin-shape-top-2: 65%;
+        --edubin-shape-left-2: 45%;
+        --edubin-shape-top-3: -45%;
+        --edubin-shape-right-3: 5%;
+        --edubin-shape-top-4: -40%;
+        --edubin-shape-right-4: -10%;
+    }
+}
+@media (max-width:768px) {
+    :root {
+        --edubin-shape-top-1: 30%;
+        --edubin-shape-left-1: -65%;
+    }
+}
+@media (max-width:576px) {
+    :root {
+        --edubin-shape-top-1: 30%;
+        --edubin-shape-left-1: -65%;
+    }
+    .edubin-slider .swiper-slide-active .shape-2 {
+        display: none;
+    }
+    .edubin-slider .swiper-slide-active .shape-3 {
+        display: none;
+    }
+    .edubin-slider .swiper-slide-active .shape-4 {
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+}
+.edubin-slider .shape-1, .edubin-slider .shape-2, .edubin-slider .shape-3, .edubin-slider .shape-4 {
+    position: absolute;
+}
+.edubin-slider .swiper-slide-active .shape-1 {
+    width: 530px;
+    height: 1370px;
+    transform: rotate(-40deg);
+    background: linear-gradient( -10deg, rgb(139, 216, 38) 0%, rgba(140, 216, 39, 0) 100%);
+    opacity: 0.6;
+    right: var(--edubin-shape-left-1);
+    top: var(--edubin-shape-top-1);
+    z-index: 0;
+    animation-name: shape_1_anim;
+    animation-duration: 2s;
+}
+.edubin-slider .swiper-slide-active .shape-2 {
+    width: 150px;
+    height: 790px;
+    background: #8cd926;
+    transform: rotate(-40deg);
+    top: var(--edubin-shape-top-2);
+    right: var(--edubin-shape-left-2);
+    z-index: 0;
+    animation-name: shape_2_anim;
+    animation-duration: 2s;
+}
+.edubin-slider .swiper-slide-active .shape-3 {
+    width: 150px;
+    height: 600px;
+    background: #8cd926;
+    transform: rotate(-40deg);
+    top: var(--edubin-shape-top-3);
+    left: var(--edubin-shape-right-3);
+    animation-name: shape_3_anim;
+    animation-duration: 2s;
+}
+.edubin-slider .swiper-slide-active .shape-4 {
+    width: 150px;
+    height: 790px;
+    background: linear-gradient( -180deg, rgb(139, 216, 38) 0%, rgba(140, 216, 39, 0) 100%);
+    transform: rotate(-40deg);
+    top: var(--edubin-shape-top-4);
+    left: var(--edubin-shape-right-4);
+    animation-name: shape_4_anim;
+    animation-duration: 2s;
+}
+@keyframes shape_1_anim {
+    from {
+        top: 95%;
+        right: -50%;
+    }
+    to {
+        top: var(--edubin-shape-top-1);
+        right: var(--edubin-shape-left-1);
+    }
+}
+@keyframes shape_2_anim {
+    from {
+        top: 96%;
+        opacity: 0;
+    }
+    to {
+        top: var(--edubin-shape-top-2);
+        opacity: 1;
+    }
+}
+@keyframes shape_3_anim {
+    from {
+        top: -60%;
+        opacity: 0;
+    }
+    to {
+        top: var(--edubin-shape-top-3);
+        opacity: 1;
+    }
+}
+@keyframes shape_4_anim {
+    from {
+        left: -20%;
+    }
+    to {
+        left: var(--edubin-shape-right-4);
+    }
+}
+/*===============================================================
+ ##Blog Post Addon
+ =================================================================*/
+
+.elementor-widget-edubin-latest-post nav.edubin-pagination-wrapper.tpc-custom-pagination {
+    margin-right: auto;
+    margin-left: auto;
+}
+.edubin-latest-news .single-news .news-thum img {
+    width: 100%;
+    border-radius: 3px;
+}
+.edubin-latest-news .news-thum.thum-list {
+    position: relative;
+}
+.edubin-latest-news .news-thum.thum-list.overlay-layout-3>a:before {
+    position: absolute;
+    background: linear-gradient(0deg, #07294d 0%, transparent 62%);
+    width: 100%;
+    height: 100%;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+}
+.edubin-latest-news .news-thum.thum-list img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+.edubin-latest-news .news-thum.thum-single {
+    position: relative;
+    margin-bottom: 20px;
+}
+.edubin-latest-news .news-thum.thum-single.overlay-layout-3>a:before {
+    position: absolute;
+    background: linear-gradient(0deg, #07294d 0%, transparent 62%);
+    width: 100%;
+    height: 100%;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+}
+.edubin-latest-news .news-thum.thum-single img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}
+.edubin-latest-news .edubin-blog-date {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    background: var(--edubin-primary-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+}
+.edubin-latest-news .edubin-blog-date p {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.edubin-latest-news .edubin-blog-date p span {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fff
+}
+.edubin-latest-news .edubin-news-meta {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    padding: 0 40px;
+    font-size: 14px;
+}
+.edubin-latest-news .edubin-news-meta ul li i {
+    padding-left: 5px;
+    color: var(--edubin-primary-color);
+}
+.edubin-latest-news .news-cont>ul>li>i {
+    /*    padding-right: 5px;*/
+    color: var(--edubin-primary-color);
+}
+.edubin-latest-news .edubin-news-meta ul li+li {
+    margin-right: 10px;
+}
+.edubin-latest-news .edubin-news-meta ul li {
+    display: inline-block;
+}
+.edubin-latest-news .edubin-news-meta ul li a {
+    color: #fff;
+}
+.edubin-latest-news .single-news .news-cont ul {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+.edubin-latest-news .single-news .news-cont ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 0;
+    margin-borrom: 0;
+}
+.edubin-latest-news .single-news .news-cont ul li+li {
+    margin-right: 10px;
+}
+.edubin-latest-news .single-news .news-cont ul li a {
+    color: #8a8a8a;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.edubin-latest-news .single-news .news-cont ul li a i {
+    color: var(--edubin-primary-color);
+    /*    margin-right: 6px;*/
+    font-size: 14px;
+}
+.edubin-latest-news .single-news .news-cont ul li i {
+    margin-left: 8px;
+}
+.edubin-latest-news .single-news .news-cont ul li a span {
+    color: #07294d;
+    text-transform: lowercase;
+}
+.edubin-latest-news .single-news .news-cont ul li a:hover {
+    color: var(--edubin-primary-color);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.edubin-latest-news .single-news .news-cont a {
+    display: block;
+}
+.edubin-latest-news .single-news.news-big .news-cont a .news-title {
+    font-size: 30px;
+    color: #07294d;
+    padding-bottom: 20px;
+    padding-top: 0;
+    margin-bottom: 0;
+    line-height: 34px;
+    font-weight: 700;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.edubin-latest-news .single-news .news-cont a:hover .news-title {
+    color: var(--edubin-primary-color);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.edubin-latest-news .single-news.news-list .news-cont .news-title {
+    font-size: 22px;
+    line-height: 28px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.edubin-latest-news .news-list .news-cont ul li a {
+    font-size: 14px;
+}
+.edubin-latest-news .news-list .news-cont .content {
+    font-size: 16px;
+}
+.edubin-latest-news .single-news.news-list {
+    margin: 0 0px 25px 0;
+    overflow: hidden;
+}
+.edubin-latest-news .single-news.news-list:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+.edubin-latest-news .single-news .news-cont a .news-title.news-list-title {
+    margin-bottom: 15px;
+}
+.edubin-latest-news .single-news .blog-list-img {
+    float: right;
+    width: 175px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+@media (max-width:768px) {
+    .edubin-latest-news .single-news.news-list:first-child {
+        padding-top: 20px;
+    }
+    .edubin-latest-news .single-news.news-list {
+        padding: 15px 0;
+    }
+}
+@media (max-width:576px) {
+    .edubin-latest-news .single-news.news-list {
+        border-right: none;
+        border-top: none;
+        padding: 0;
+    }
+    .edubin-latest-news .news-thum.thum-single img {
+        height: 320px;
+    }
+    .edubin-latest-news .news-thum.thum-list img {
+        height: 320px;
+        margin-bottom: 20px;
+    }
+    .edubin-latest-news .single-news.news-big .news-cont a .news-title {
+        font-size: 24px;
+    }
+    .edubin-latest-news .single-news .blog-list-img {
+        width: 100%;
+    }
+}
+/* Layout 1 */
+
+.edubin-latest-news.layout-1 .single-news {
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.edubin-latest-news.layout-1 .single-news:last-child {
+    margin-bottom: 0;
+}
+.edubin-latest-news.layout-1 .news-thum {
+    height: 210px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.edubin-latest-news.layout-1 .news-thum img {
+    height: 210px;
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+@media only screen and (max-width:768px) {
+    .edubin-latest-news.layout-1 .news-thum {
+        max-height: 410px;
+    }
+    .edubin-latest-news.layout-1 .news-thum img {
+        height: 410px;
+    }
+}
+@media only screen and (max-width:576px) {
+    .edubin-latest-news.layout-1 .news-thum {
+        max-height: 210px;
+    }
+    .edubin-latest-news.layout-1 .news-thum img {
+        height: 210px;
+    }
+}
+.edubin-latest-news.layout-1 .single-news:hover .news-thum img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.edubin-latest-news.layout-1 .news-title {
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.single-news .news-title {
+    font-family: "Cairo",sans-serif;
+}
+.single-news>.news-thum {
+    margin-bottom: 12px !important;
+}
+.news-cont>ul>li {
+    margin: 0;
+}
+.edubin-latest-news.layout-1 .single-news .news-cont ul {
+    padding-bottom: 5px;
+    padding-right: 0;
+}
+.edubin-latest-news.layout-1 .single-news .news-cont ul li a i {
+    color: var(--edubin-primary-color);
+}
+.edubin-latest-news.layout-1 .single-news .news-cont ul li a {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8a8a8a;
+}
+.edubin-latest-news.layout-1 .single-news .news-cont ul li i {
+    margin-left: 8px;
+    color: var(--edubin-primary-color);
+}
+/* Layout 5 */
+
+.edubin-latest-news.layout-5 .single-news {
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+    transition: all 0.5s ease;
+}
+.edubin-latest-news.layout-5 .single-news:last-child {
+    margin-bottom: 30px;
+}
+.edubin-latest-news.layout-5 .news-thum {
+    /*  height: 210px;*/
+    overflow: hidden;
+}
+.edubin-latest-news.layout-5 .news-thum img {
+    /*    height: 210px;*/
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+.edubin-latest-news.layout-5 .single-news:hover .news-thum img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.edubin-latest-news.layout-5 .news-cont {
+    padding: 30px 30px 0;
+}
+.edubin-latest-news.layout-5 .news-title {
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+}
+.edubin-latest-news.layout-5 .single-news .news-cont ul {
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+.edubin-latest-news.layout-5 .single-news .news-cont ul li a i {
+    color: var(--edubin-primary-color);
+}
+.edubin-latest-news.layout-5 .single-news .news-cont ul li a {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8a8a8a;
+    /*    margin-right: 10px;*/
+}
+.edubin-latest-news.layout-5 .single-news .news-cont ul li i {
+    /*    margin-right: 8px;*/
+    color: var(--edubin-primary-color);
+}
+.edubin-latest-news.layout-5 .news-cont p {
+    /*    margin-bottom: 0;*/
+}
+.edubin-latest-news .edubin-blog-readmore {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+/* Layout 6 */
+
+.edubin-no-gutters {
+    padding-right: 0;
+    padding-left: 0;
+}
+.row.edubin-latest-news.layout-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.layout-6 .single-news {
+    margin-bottom: 40px;
+}
+.layout-6 .single-news .news-cont a .news-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #07294d;
+}
+.layout-6 .single-news .news-cont ul li a {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    color: #8a8a8a;
+}
+.layout-6 .single-news .news-cont ul {
+    padding-bottom: 12px;
+    padding-right: 0;
+}
+.layout-6 .news-thum {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.layout-6 .news-cont {
+    padding-left: 30px;
+}
+.layout-6 .single-news .news-thum img {
+    height: 320px;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.layout-6 .single-news:hover .news-thum a img {
+    transform: scale(1.1);
+}
+.edubin-latest-news .news-thum .news-label {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.edubin-latest-news .news-thum .news-label span {
+    display: block;
+    background: #eeb712;
+    font-family: var(--edubin-font-secondary);
+    font-size: 15px;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 7px 15px;
+    font-weight: 400;
+    color: #fff;
+}
+/*===============================================================
+ ##Services box addon
+ =================================================================*/
+
+.edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+1) .services-single-item, .edubin-services-wrapper .services-single-wrap:nth-child(4n+1) .services-single-item {
+    background: #02b3e4;
+}
+.edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+2) .services-single-item, .edubin-services-wrapper .services-single-wrap:nth-child(4n+2) .services-single-item {
+    background: #a951ed;
+}
+.edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+3) .services-single-item, .edubin-services-wrapper .services-single-wrap:nth-child(4n+3) .services-single-item {
+    background: #ffae0c;
+}
+.edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+4) .services-single-item, .edubin-services-wrapper .services-single-wrap:nth-child(4n+4) .services-single-item {
+    background: #ff5483;
+}
+.edubin-custom-carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 120px;
+}
+.edubin-services-wrapper .services-single-wrap {
+    padding: 25px;
+    border-radius: 40px;
+    margin-top: 140px;
+}
+.edubin-custom-carousel .services-single-wrap {
+    padding: 25px;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+.edubin-services-wrapper .services-single-wrap:nth-child(4n+1), .edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+1) .services-single-wrap {
+    border: 1px dashed #02b3e4;
+}
+.edubin-services-wrapper .services-single-wrap:nth-child(4n+2), .edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+2) .services-single-wrap {
+    border: 1px dashed #a951ed;
+}
+.edubin-services-wrapper .services-single-wrap:nth-child(4n+3), .edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+3) .services-single-wrap {
+    border: 1px dashed #ffae0c;
+}
+.edubin-services-wrapper .services-single-wrap:nth-child(4n+4), .edubin-services-wrapper .swiper-wrapper .swiper-slide:nth-child(4n+4) .services-single-wrap {
+    border: 1px dashed #ff5483;
+}
+.edubin-services-wrapper .services-single-wrap {
+    top: 0;
+    transition: 0.35s;
+    position: relative;
+}
+.edubin-services-wrapper .services-single-wrap:hover {
+    top: -10px;
+    transition: 0.35s;
+    position: relative;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .edubin-custom-carousel {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .edubin-custom-carousel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575.98px) {
+    .edubin-custom-carousel {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.edubin-services-wrapper .services-single-item {
+    position: relative;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: -6px 5px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.35s;
+    top: 0;
+    padding-top: 60px;
+}
+.edubin-services-wrapper .services-single-wrap:hover .services-single-item {
+    top: -10px;
+    transition: 0.35s;
+}
+.edubin-services-wrapper .cat-icon-img {
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 100px;
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    position: absolute;
+    top: -140px;
+    right: 0;
+    left: 0;
+}
+.edubin-services-wrapper .cat-icon-img img {
+    border-radius: 100px;
+    object-fit: cover;
+    height: 140px;
+    width: 140px;
+}
+.edubin-services-wrapper .cat-title {
+    color: #fff;
+    font-size: 24px;
+    padding-top: 12px;
+    margin-bottom: 5px;
+    transition: .5s;
+}
+.edubin-services-wrapper p {
+    color: #fff;
+    margin-bottom: 0;
+}
+.edubin-services-wrapper .edubin-cat-content {
+    padding: 10px 30px 35px;
+}
+.edubin-services-wrapper a:hover {
+    color: #fff;
+}
+.edubin-services-wrapper a {
+    color: #fff;
+}
+/*===============================================================
+ ##Icon+Text
+ =================================================================*/
+
+ul.tpc-header-list-info {
+    margin-bottom: 0;
+}
+/*===============================================================
+ ##Woo Cart
+ =================================================================*/
+
+.edubin-mini-cart_wrapper {
+    font-size: 18px;
+}
+.edubin-mini-cart_wrapper>a {
+    position: relative;
+}
+.edubin-mini-cart_wrapper>a>span {
+    font-size: 12px;
+    color: #07294d;
+    background-color: var(--edubin-primary-color);
+    border-radius: 100px;
+    padding: 0px 4px;
+    position: absolute;
+    left: -15px;
+    height: 18px;
+    width: 18px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-flex;
+    bottom: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.edubin-arrow-style-1 {
+    position: absolute;
+    background: transparent;
+    transform: translateY(-50%);
+    padding: 0;
+    top: -45px;
+    right: 92%;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 3px;
+    color: #000;
+    border: 2px solid #aaaaaa;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 4;
+}
+@media (max-width: 991px) {
+    .edubin-arrow-style-1 {
+        right: 88%;
+    }
+}
+@media (max-width: 767px) {
+    .edubin-arrow-style-1 {
+        right: 85%;
+    }
+}
+@media (max-width: 580px) {
+    .edubin-arrow-style-1 {
+        right: 80%;
+    }
+}
+@media (max-width: 450px) {
+    .edubin-arrow-style-1 {
+        right: 70%;
+    }
+}
+.edubin-arrow-style-1:hover {
+    border-color: var(--edubin-primary-color);
+    background-color: var(--edubin-primary-color);
+}
+.edubin-arrow-style-1.next-icon {
+    right: inherit;
+    left: 0;
+}
+.edubin-arrow-style-2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transform: translateY(-50%);
+    padding: 0;
+    top: 50%;
+    color: #868e96;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 1;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #868e96;
+    border-radius: 100px;
+}
+.tpc-slider-wrapper-arrows-enable:hover .edubin-arrow-style-2 {
+    opacity: 1;
+    margin-right: -25px;
+    margin-left: -20px;
+}
+.woocommerce-product-addon:hover .edubin-arrow-style-2 {
+    opacity: 1;
+    margin-right: -25px;
+    margin-left: -20px;
+}
+.edubin-arrow-style-2.next-icon {
+    right: auto;
+    left: -8px;
+}
+/*===============================================================
+ ##Accordion
+ =================================================================*/
+
+.accordion .single_accordion {
+    position: relative;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.15);
+}
+.single_accordion:first-of-type {
+    margin-top: 0;
+}
+.accordion .single_accordion .edubin-accordion-header {
+    width: 100%;
+    cursor: pointer;
+    padding: 0 30px;
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 2;
+}
+.single_accordion.edubin-icon-align-left .edubin-accordion-header {
+    padding-right: 60px;
+}
+.accordion .single_accordion .edubin-accordion-header.active {
+    background: color-mix(in srgb, var(--edubin-primary-color) 15%, transparent);
+    border-radius: 10px 10px 0 0;
+}
+.accordion .single_accordion .edubin-accordion-header.active .accordion-title {
+    color: var(--edubin-primary-color);
+}
+.single_accordion .edubin-accordion-header .accordion-title {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 600;
+    text-transform: capitalize;
+    z-index: 1;
+    position: relative;
+    padding: 17px 0px;
+    padding-left: 25px;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+.single_accordion .edubin-accordion-header span.accordion-icon {
+    position: absolute;
+    left: 0;
+    color: #222222;
+    text-align: center;
+    display: flex;
+    transition: all 0.3s linear;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.single_accordion.edubin-icon-align-left .accordion-icon {
+    right: 30px;
+}
+.single_accordion .edubin-accordion-header span.accordion-icon i {
+    font-size: 13px;
+    transition: all 0.3s linear;
+    transform: rotate(0deg);
+}
+.single_accordion .edubin-accordion-header.active span.accordion-icon i {
+    transform: rotate(-180deg);
+}
+.single_accordion.edubin-icon-align-right span.accordion-icon {
+    right: inherit;
+    left: 30px;
+}
+.single_accordion .accordion-body .accordion-content {
+    font-size: 16px;
+    color: #666666;
+    padding: 30px;
+}
+.single_accordion.edubin-icon-align-right .accordion-body .accordion-content {
+    padding-top: 15px;
+}
+/*===============================================================
+ ##Info Box 
+ =================================================================*/
+
+.edubin-info-box-wrapper {
+    display: inline-flex;
+    align-items: center;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 140px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+.edubin-info-box-wrapper .icon-wrapper {
+    flex-shrink: 0;
+    background: var(--edubin-primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -60px;
+    margin-left: 15px;
+}
+.edubin-info-box-wrapper.icon-right .icon-wrapper {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.edubin-info-box-wrapper.icon-top .icon-wrapper {
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+.edubin-info-box-wrapper .icon-wrapper svg {
+    width: 15px;
+    height: 15px;
+}
+.edubin-info-box-wrapper .info-text {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--edubin-heading-color);
+}
+.edubin-info-box-wrapper .info-text span {
+    color: var(--edubin-primary-color);
+}

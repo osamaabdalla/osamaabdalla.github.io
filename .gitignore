@@ -1,0 +1,23 @@
+# macOS system files
+.DS_Store
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Icon?
+._*
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project

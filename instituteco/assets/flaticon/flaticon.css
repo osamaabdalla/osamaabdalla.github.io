@@ -1,0 +1,318 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 05/06/2020 09:45
+  	*/
+
+	@font-face {
+	    font-family: "Flaticon";
+	    src: url("Flaticon.woff2") format("woff2");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon";
+	        src: url("../../fonts/Flaticon.svg#Flaticon") format("svg");
+	    }
+	}
+
+	[class^="flaticons-"]:before,
+	[class*=" flaticons-"]:before,
+	[class^="flaticons-"]:after,
+	[class*=" flaticons-"]:after {
+	    font-family: Flaticon;
+	    font-style: normal;
+	}
+
+	.flaticons-scholarship:before {
+	    content: "\f100";
+	}
+
+	.flaticons-institute:before {
+	    content: "\f101";
+	}
+
+	.flaticons-diploma:before {
+	    content: "\f102";
+	}
+
+	.flaticons-mortarboard:before {
+	    content: "\f103";
+	}
+
+	.flaticons-mortarboard-1:before {
+	    content: "\f104";
+	}
+
+	.flaticons-mortarboard-2:before {
+	    content: "\f105";
+	}
+
+	.flaticons-diploma-1:before {
+	    content: "\f106";
+	}
+
+	.flaticons-education:before {
+	    content: "\f107";
+	}
+
+	.flaticons-big-license:before {
+	    content: "\f108";
+	}
+
+	.flaticons-test:before {
+	    content: "\f109";
+	}
+
+	.flaticons-notebook:before {
+	    content: "\f10a";
+	}
+
+	.flaticons-school-supplies:before {
+	    content: "\f10b";
+	}
+
+	.flaticons-trophy:before {
+	    content: "\f10c";
+	}
+
+	.flaticons-book:before {
+	    content: "\f10d";
+	}
+
+	.flaticons-support:before {
+	    content: "\f10e";
+	}
+
+	.flaticons-book-1:before {
+	    content: "\f10f";
+	}
+
+	.flaticons-trophy-1:before {
+	    content: "\f110";
+	}
+
+	.flaticons-chart:before {
+	    content: "\f111";
+	}
+
+	.flaticons-solar-energy:before {
+	    content: "\f112";
+	}
+
+	.flaticons-layers:before {
+	    content: "\f113";
+	}
+
+	.flaticons-gmo:before {
+	    content: "\f114";
+	}
+
+	.flaticons-biology:before {
+	    content: "\f115";
+	}
+
+	.flaticons-tube:before {
+	    content: "\f116";
+	}
+
+	.flaticons-ambulance:before {
+	    content: "\f117";
+	}
+
+	.flaticons-microscope:before {
+	    content: "\f118";
+	}
+
+	.flaticons-balance:before {
+	    content: "\f119";
+	}
+
+	.flaticons-auction:before {
+	    content: "\f11a";
+	}
+
+	.flaticons-analytics:before {
+	    content: "\f11b";
+	}
+
+	.flaticons-food:before {
+	    content: "\f11c";
+	}
+
+	.flaticons-collaboration:before {
+	    content: "\f11d";
+	}
+
+	.flaticons-team:before {
+	    content: "\f11e";
+	}
+
+	.flaticons-medal:before {
+	    content: "\f11f";
+	}
+
+	.flaticons-experience:before {
+	    content: "\f120";
+	}
+
+	.flaticons-accounting:before {
+	    content: "\f121";
+	}
+
+	.flaticons-management:before {
+	    content: "\f122";
+	}
+
+	.flaticons-laboratory:before {
+	    content: "\f123";
+	}
+
+	.flaticons-chemistry:before {
+	    content: "\f124";
+	}
+
+	.flaticons-piston:before {
+	    content: "\f125";
+	}
+
+	.flaticons-molecule:before {
+	    content: "\f126";
+	}
+
+	.flaticons-virus:before {
+	    content: "\f127";
+	}
+
+	.flaticons-first-aid-kit:before {
+	    content: "\f128";
+	}
+
+	.flaticons-drugs:before {
+	    content: "\f129";
+	}
+
+	.flaticons-medicine:before {
+	    content: "\f12a";
+	}
+
+	.flaticons-mental-health:before {
+	    content: "\f12b";
+	}
+
+	.flaticons-microscope-1:before {
+	    content: "\f12c";
+	}
+
+	.flaticons-global:before {
+	    content: "\f12d";
+	}
+
+	.flaticons-coin:before {
+	    content: "\f12e";
+	}
+
+	.flaticons-stock-market:before {
+	    content: "\f12f";
+	}
+
+	.flaticons-politics:before {
+	    content: "\f130";
+	}
+
+	.flaticons-voting:before {
+	    content: "\f131";
+	}
+
+	.flaticons-school:before {
+	    content: "\f132";
+	}
+
+	.flaticons-book-2:before {
+	    content: "\f133";
+	}
+
+	.flaticons-education-1:before {
+	    content: "\f134";
+	}
+
+	.flaticons-dress:before {
+	    content: "\f135";
+	}
+
+	.flaticons-knowledge:before {
+	    content: "\f136";
+	}
+
+	.flaticons-team-1:before {
+	    content: "\f137";
+	}
+
+	.flaticons-institute-1:before {
+	    content: "\f138";
+	}
+
+	.flaticons-degree:before {
+	    content: "\f139";
+	}
+
+	.flaticons-student:before {
+	    content: "\f13a";
+	}
+
+	.flaticons-computer:before {
+	    content: "\f13b";
+	}
+
+	.flaticons-edit:before {
+	    content: "\f13c";
+	}
+
+	.flaticons-target:before {
+	    content: "\f13d";
+	}
+
+	.flaticons-stationery:before {
+	    content: "\f13e";
+	}
+
+	.flaticons-laptop:before {
+	    content: "\f13f";
+	}
+
+	.flaticons-microscope-2:before {
+	    content: "\f140";
+	}
+
+	.flaticons-world-wide-web:before {
+	    content: "\f141";
+	}
+
+	.flaticons-search:before {
+	    content: "\f142";
+	}
+
+	.flaticons-clock:before {
+	    content: "\f143";
+	}
+
+	.flaticons-instagram:before {
+	    content: "\f144";
+	}
+
+	.flaticons-twitter:before {
+	    content: "\f145";
+	}
+
+	.flaticons-youtube:before {
+	    content: "\f146";
+	}
+
+	.flaticons-dribbble:before {
+	    content: "\f147";
+	}
+
+	.flaticons-facebook:before {
+	    content: "\f148";
+	}
