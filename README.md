@@ -30,7 +30,7 @@ I hold a **Master’s Degree in Data Science and Analytics** from **Universiti S
 - Firebase, Push Notifications, In-App Purchases
 
 **Web & Backend Development**
-- Laravel, Livewire, Node.js, Next.js  
+- Laravel, Livewire, Node.js, Next.js, Nest.js  
 - RESTful APIs, Authentication (JWT, OAuth)
 - MySQL, MongoDB
 
